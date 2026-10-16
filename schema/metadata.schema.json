@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/quantum-many-body-leaderboard/open-problems/schema/metadata.schema.json",
+  "title": "QMBL: Open Problems entry (metadata.yaml)",
+  "description": "One entry: one state of one system on one instance. scripts/validate.mjs checks every metadata.yaml against this file; it reads type, required, properties, additionalProperties, enum, pattern, minimum and minLength.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["system", "team", "contact", "ai_involvement", "instance", "energy_per_site", "state", "compute", "date"],
+  "properties": {
+    "system": {"type": "string", "minLength": 2, "description": "The method or AI system the entry evaluates. One live entry per system and instance: a new entry of the same system replaces the old one."},
+    "team": {"type": "string", "minLength": 2, "description": "Who made the entry: names or group."},
+    "contact": {"type": "string", "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$", "description": "An email address for questions about the entry."},
+    "ai_involvement": {"type": "string", "enum": ["ai", "human+ai", "human"], "description": "ai: an AI system did the work end to end. human+ai: people and AI systems both did substantial parts. human: no AI system beyond ordinary tools."},
+    "instance": {"type": "string", "pattern": "^[A-Za-z0-9]+/[A-Za-z0-9_.+-]+$", "description": "A QMBL instance id from targets/v1.json, e.g. J1J2/square_100_P_0.5."},
+    "energy_per_site": {"type": "number", "description": "The entrant's own measurement, per site in the convention qmbl.org prints: S.S per site for spin models, total / N for fermions."},
+    "sigma_per_site": {"type": ["number", "null"], "minimum": 0, "description": "Its error bar per site, if you have one: asked for, not required, as for every QMBL row (RULES.md section 6). Null or left out for a deterministic state (an MPS contracted exactly)."},
+    "sigma_method": {"type": "string", "enum": ["blocking", "binning", "autocorrelation", "bootstrap", "chains", "deterministic"], "description": "How sigma was estimated; required when sigma_per_site is given."},
+    "samples": {"type": ["integer", "null"], "minimum": 1, "description": "Number of samples behind the measurement, if known; null or left out for a deterministic state."},
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["framework", "code_url"],
+      "properties": {
+        "framework": {"type": "string", "enum": ["flax", "torch", "jax", "julia", "c", "python", "mps"], "description": "How the verifier loads the state (its README, 'The state you submit'): flax (a module returning log psi), torch (an nn.Module), jax (JAX without flax: apply_fn(params, x)), julia (logpsi in a .jl file), c (a shared library exporting logpsi), python (a numpy host function), or mps (an HDF5 file in the verifier's MPS_FORMAT.md, contracted exactly)."},
+        "entry_point": {"type": ["string", "null"], "pattern": "^[A-Za-z0-9_./-]+(\\.py:[A-Za-z_][A-Za-z0-9_]*|\\.jl|\\.so)$", "description": "Inside the code: file.py:NAME for flax, torch, jax and python; file.jl for julia; the built lib.so for c. Null or left out for mps."},
+        "build": {"type": ["string", "null"], "description": "Optional shell command run in the code checkout before measuring, e.g. the compile step of a c state."},
+        "kernel": {"type": ["string", "null"], "pattern": "^[A-Za-z0-9_./-]+\\.py:[A-Za-z_][A-Za-z0-9_]*$", "description": "Optional file.py:factory for a bounded local-energy kernel (large fermion systems, flax only)."},
+        "code_url": {"type": "string", "pattern": "^https://", "description": "Public code at a fixed commit."},
+        "checkpoint_url": {"type": ["string", "null"], "pattern": "^https://", "description": "Public download of the parameter file (flax msgpack, torch state_dict, npz or msgpack pytree, or a file the julia, c or python state reads itself) or, for mps, the HDF5 file. Required for flax, torch, jax and mps."},
+        "checkpoint_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$", "description": "SHA-256 of that file; required with checkpoint_url."}
+      }
+    },
+    "compute": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hardware"],
+      "properties": {
+        "hardware": {"type": "string", "minLength": 2, "description": "e.g. 1x NVIDIA H100 80GB."},
+        "gpu_hours": {"type": ["number", "null"], "minimum": 0},
+        "cpu_core_hours": {"type": ["number", "null"], "minimum": 0},
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "paper": {"type": ["string", "null"], "pattern": "^https://", "description": "Optional link to a write-up."},
+    "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Date of the entry."}
+  }
+}

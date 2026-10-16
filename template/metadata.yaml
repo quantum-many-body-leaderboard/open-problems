@@ -1,0 +1,27 @@
+# One entry: one state of one system on one instance. Copy this folder to
+# submissions/<model>/<instance>/<YYYY-MM-DD>_<team>_<method>/ and fill it in.
+# Plain YAML only: key: value, nested blocks indented by two spaces, # comments.
+system: "Example ViT"              # the method or AI system; one live entry per system and instance
+team: "Example Lab"
+contact: "someone@example.org"
+ai_involvement: "human+ai"         # ai | human+ai | human
+instance: "J1J2/square_100_P_0.5"  # an instance_id from targets/v1.json
+energy_per_site: -0.4975           # your measurement, per site as qmbl.org prints it
+sigma_per_site: 0.000004           # optional: your error bar if you have one; null for a deterministic state
+sigma_method: "blocking"           # with sigma: blocking | binning | autocorrelation | bootstrap | chains | deterministic
+samples: 1048576                   # optional; null for a deterministic state
+state:
+  framework: "flax"                # flax | torch | jax | julia | c | python | mps (the verifier's README)
+  entry_point: "model.py:build_model"  # file.py:NAME; julia: file.jl; c: the built lib.so; mps: null
+  build: null                      # optional shell command run in the code before measuring (c states)
+  kernel: null                     # optional file.py:factory, flax states of large fermion systems only
+  code_url: "https://github.com/example/example-vit/tree/0123456789abcdef0123456789abcdef01234567"
+  checkpoint_url: "https://zenodo.org/records/0000000/files/state.msgpack"  # parameters, or the MPS HDF5 file
+  checkpoint_sha256: "0000000000000000000000000000000000000000000000000000000000000000"
+compute:
+  hardware: "1x NVIDIA H100 80GB"
+  gpu_hours: 12.5
+  cpu_core_hours: null
+  notes: null
+paper: null                        # optional link to a write-up
+date: "2026-10-08"

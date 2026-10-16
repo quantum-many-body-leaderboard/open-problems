@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# maintainer work: downloaded code, checkpoints and raw measurements stay outside the repository
+work/

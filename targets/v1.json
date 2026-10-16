@@ -1,0 +1,4229 @@
+{
+ "version": "v1",
+ "frozen": "2026-10-08",
+ "qmbl_release": "v0.4.0",
+ "qmbl_doi": "10.5281/zenodo.23239245",
+ "rule": "Every instance of the QMBL release with no exact energy. The energy to beat is QMBL's best variational energy (lowest unflagged variational row), read live from QMBL when an entry is verified; target_at_freeze is that energy on the freeze date.",
+ "count": 153,
+ "instances": [
+  {
+   "instance_id": "Heisenberg/chain_200_O",
+   "model": "Heisenberg",
+   "lattice": "chain",
+   "n_sites": 200,
+   "boundary": "O",
+   "params": {},
+   "per_site_divisor": 800,
+   "target_at_freeze": {
+    "energy": -353.766222278,
+    "sigma": null,
+    "energy_per_site": -0.4422077778475,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_heisenberg/chain_200_O.jl)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "chain lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/chain_200_P",
+   "model": "Heisenberg",
+   "lattice": "chain",
+   "n_sites": 200,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 800,
+   "target_at_freeze": {
+    "energy": -354.534213002,
+    "sigma": null,
+    "energy_per_site": -0.4431677662525,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_heisenberg/chain_200_P.jl)"
+   },
+   "record_at_freeze": null,
+   "published_results": 4,
+   "verifier": {
+    "supported": false,
+    "reason": "chain lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/kagome-6x6_108_P",
+   "model": "Heisenberg",
+   "lattice": "kagome-6x6",
+   "n_sites": 108,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 432,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": -189.3456,
+    "sigma": 0.1296,
+    "energy_per_site": -0.43829999999999997,
+    "sigma_per_site": 0.0003,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Depenbrock, McCulloch & Schollwoeck, Nature of the Spin Liquid Ground State of the S=1/2 Heisenberg Model on the Kagome Lattice, Phys. Rev. Lett. 109, 067201 (2012), arXiv:1205.4858"
+   },
+   "published_results": 2,
+   "verifier": {
+    "supported": false,
+    "reason": "kagome-6x6 lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/kagome-8x8_192_P",
+   "model": "Heisenberg",
+   "lattice": "kagome-8x8",
+   "n_sites": 192,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 768,
+   "target_at_freeze": {
+    "energy": -330.143,
+    "sigma": 0.011,
+    "energy_per_site": -0.42987369791666663,
+    "sigma_per_site": 0.000014322916666666666,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Heisenberg/kagome-8x8_192_P/vmc_gutzwiller.sh)"
+   },
+   "record_at_freeze": null,
+   "published_results": 4,
+   "verifier": {
+    "supported": false,
+    "reason": "kagome-8x8 lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/pyrochlore-2x2x2_128_P",
+   "model": "Heisenberg",
+   "lattice": "pyrochlore-2x2x2",
+   "n_sites": 128,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 512,
+   "target_at_freeze": {
+    "energy": -252.05248,
+    "sigma": 0.03584,
+    "energy_per_site": -0.49229,
+    "sigma_per_site": 0.00007,
+    "bound_type": "variational",
+    "method": "mVMC + RBM",
+    "reference": "Ground state of the $S$=1/2 pyrochlore Heisenberg antiferromagnet: A quantum spin liquid emergent from dimensional reduction, arXiv:2311.11561"
+   },
+   "record_at_freeze": {
+    "energy": -253.10208,
+    "sigma": 0.0256,
+    "energy_per_site": -0.49434,
+    "sigma_per_site": 0.00005,
+    "bound_type": "extrapolated",
+    "method": "mVMC",
+    "reference": "Ground state of the $S$=1/2 pyrochlore Heisenberg antiferromagnet: A quantum spin liquid emergent from dimensional reduction, arXiv:2311.11561"
+   },
+   "published_results": 8,
+   "verifier": {
+    "supported": false,
+    "reason": "pyrochlore-2x2x2 lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/pyrochlore-3x3x3_108_P",
+   "model": "Heisenberg",
+   "lattice": "pyrochlore-3x3x3",
+   "n_sites": 108,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 432,
+   "target_at_freeze": {
+    "energy": -210.4272,
+    "sigma": 0.0432,
+    "energy_per_site": -0.4871,
+    "sigma_per_site": 0.0001,
+    "bound_type": "variational",
+    "method": "mVMC",
+    "reference": "[paper](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.11.041021)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "pyrochlore-3x3x3 lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/pyrochlore-3x3x3_432_P",
+   "model": "Heisenberg",
+   "lattice": "pyrochlore-3x3x3",
+   "n_sites": 432,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 1728,
+   "target_at_freeze": {
+    "energy": -844.14528,
+    "sigma": 0.05184,
+    "energy_per_site": -0.48851,
+    "sigma_per_site": 0.000029999999999999997,
+    "bound_type": "variational",
+    "method": "mVMC",
+    "reference": "Ground state of the $S$=1/2 pyrochlore Heisenberg antiferromagnet: A quantum spin liquid emergent from dimensional reduction, arXiv:2311.11561"
+   },
+   "record_at_freeze": {
+    "energy": -850.8672,
+    "sigma": 0.3456,
+    "energy_per_site": -0.4924,
+    "sigma_per_site": 0.0002,
+    "bound_type": "extrapolated",
+    "method": "mVMC",
+    "reference": "Ground state of the $S$=1/2 pyrochlore Heisenberg antiferromagnet: A quantum spin liquid emergent from dimensional reduction, arXiv:2311.11561"
+   },
+   "published_results": 5,
+   "verifier": {
+    "supported": false,
+    "reason": "pyrochlore-3x3x3 lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/pyrochlore-4x4x4_1024_P",
+   "model": "Heisenberg",
+   "lattice": "pyrochlore-4x4x4",
+   "n_sites": 1024,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 4096,
+   "target_at_freeze": {
+    "energy": -1998.857,
+    "sigma": 0.048,
+    "energy_per_site": -0.488002197265625,
+    "sigma_per_site": 0.00001171875,
+    "bound_type": "variational",
+    "method": "mVMC",
+    "reference": "[paper](https://arxiv.org/abs/2311.11561) [code](https://github.com/varbench/methods/blob/main/scripts/Heisenberg/pyrochlore-4x4x4_1024_P/mVMC.sh)"
+   },
+   "record_at_freeze": {
+    "energy": -2015.6416,
+    "sigma": 0.8192,
+    "energy_per_site": -0.4921,
+    "sigma_per_site": 0.0002,
+    "bound_type": "extrapolated",
+    "method": "mVMC",
+    "reference": "Ground state of the $S$=1/2 pyrochlore Heisenberg antiferromagnet: A quantum spin liquid emergent from dimensional reduction, arXiv:2311.11561"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "pyrochlore-4x4x4 lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/pyrochlore-4x4x4_256_P",
+   "model": "Heisenberg",
+   "lattice": "pyrochlore-4x4x4",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 1024,
+   "target_at_freeze": {
+    "energy": -497.238062785,
+    "sigma": 0.00295852,
+    "energy_per_site": -0.4855840456884766,
+    "sigma_per_site": 0.0000028891796875,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Cheng & Li, Closely competing valence bond crystal orders in the ground state of the spin-1/2 antiferromagnetic Heisenberg model on the pyrochlore lattice: A large scale unrestricted variational study, Phys. Rev. B 113, 075158 (2026), arXiv:2509.13746, doi:10.1103/dsr3-sjt6"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": false,
+    "reason": "pyrochlore-4x4x4 lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/shuriken_216_P",
+   "model": "Heisenberg",
+   "lattice": "shuriken",
+   "n_sites": 216,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 864,
+   "target_at_freeze": {
+    "energy": -378.086,
+    "sigma": 0.086,
+    "energy_per_site": -0.4375995370370371,
+    "sigma_per_site": 0.00009953703703703703,
+    "bound_type": "variational",
+    "method": "mVMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Nikita Astrakhantsev on 2021-09-15, commit f244a7b; method: Astrakhantsev et al., Phys. Rev. B 104, L220408 (2021), arXiv:2110.08198, which shows this energy only as a plotted point (Fig. 4))"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": false,
+    "reason": "shuriken lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/shuriken_384_P",
+   "model": "Heisenberg",
+   "lattice": "shuriken",
+   "n_sites": 384,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 1536,
+   "target_at_freeze": {
+    "energy": -671.43,
+    "sigma": 0.1536,
+    "energy_per_site": -0.43712890624999995,
+    "sigma_per_site": 0.00009999999999999999,
+    "bound_type": "variational",
+    "method": "mVMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Nikita Astrakhantsev on 2021-09-15, commit 0626164; method: Astrakhantsev et al., Phys. Rev. B 104, L220408 (2021), arXiv:2110.08198, which shows this energy only as a plotted point (Fig. 4))"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": false,
+    "reason": "shuriken lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/shuriken_96_P",
+   "model": "Heisenberg",
+   "lattice": "shuriken",
+   "n_sites": 96,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 384,
+   "target_at_freeze": {
+    "energy": -168.2918,
+    "sigma": 0.0048,
+    "energy_per_site": -0.4382598958333333,
+    "sigma_per_site": 0.000012499999999999999,
+    "bound_type": "variational",
+    "method": "mVMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Nikita Astrakhantsev on 2021-09-15, commit 9d01a77; method: Astrakhantsev et al., Phys. Rev. B 104, L220408 (2021), arXiv:2110.08198, which shows this energy only as a plotted point (Fig. 4))"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": false,
+    "reason": "shuriken lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_100_O",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 100,
+   "boundary": "O",
+   "params": {},
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -205.90673107198964,
+    "sigma": null,
+    "energy_per_site": -0.5147668276799741,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Heisenberg/triangular_100_O/dmrg.sh)"
+   },
+   "record_at_freeze": null,
+   "published_results": 7,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_108_P",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 108,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 432,
+   "target_at_freeze": {
+    "energy": -238.9608,
+    "sigma": 0.01296,
+    "energy_per_site": -0.55315,
+    "sigma_per_site": 0.000029999999999999997,
+    "bound_type": "variational",
+    "method": "GCNN",
+    "reference": "Roth, Szabo & MacDonald, High-accuracy variational Monte Carlo for frustrated magnets with deep neural networks, Phys. Rev. B 108, 054410 (2023), arXiv:2211.07749"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_144_O",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 144,
+   "boundary": "O",
+   "params": {},
+   "per_site_divisor": 576,
+   "target_at_freeze": {
+    "energy": -296.677327164,
+    "sigma": null,
+    "energy_per_site": -0.5150648041041667,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensor_cpp/dmrg_triangular_heisenberg_12x12.cc)"
+   },
+   "record_at_freeze": null,
+   "published_results": 5,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_144_P",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 576,
+   "target_at_freeze": {
+    "energy": -316.413360596,
+    "sigma": 0.056408,
+    "energy_per_site": -0.5493287510347222,
+    "sigma_per_site": 0.00009793055555555556,
+    "bound_type": "variational",
+    "method": "2D RNN",
+    "reference": "Moss, Wiersema, Hibat-Allah, Carrasquilla & Melko, Leveraging recurrence in neural network wavefunctions for large-scale simulations of Heisenberg antiferromagnets on the triangular lattice, Phys. Rev. B 112, 134449 (2025), arXiv:2505.20406"
+   },
+   "record_at_freeze": null,
+   "published_results": 6,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_1764_P",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 1764,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 7056,
+   "target_at_freeze": {
+    "energy": -3890.883024,
+    "sigma": 0.007056,
+    "energy_per_site": -0.5514290000000001,
+    "sigma_per_site": 0.000001,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Viteritti, Rende, Sachdev & Carleo, Approaching the Thermodynamic Limit with Neural-Network Quantum States, arXiv:2602.02665"
+   },
+   "record_at_freeze": {
+    "energy": -3892.86576,
+    "sigma": 0.07056,
+    "energy_per_site": -0.55171,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "extrapolated",
+    "method": "ViT",
+    "reference": "Viteritti, Rende, Sachdev & Carleo, Approaching the Thermodynamic Limit with Neural-Network Quantum States, arXiv:2602.02665"
+   },
+   "published_results": 2,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_196_O",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 196,
+   "boundary": "O",
+   "params": {},
+   "per_site_divisor": 784,
+   "target_at_freeze": {
+    "energy": -402.804,
+    "sigma": 0.076,
+    "energy_per_site": -0.5137806122448979,
+    "sigma_per_site": 0.00009693877551020408,
+    "bound_type": "variational",
+    "method": "2D RNN",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Mohamed Hibat-Allah on 2022-02-15 as the S.S total -100.701, commit 1bf1095, x4 to the Pauli total by Dian Wu in 878bf7a (2022-07-11); method: M. Hibat-Allah, R. G. Melko and J. Carrasquilla, arXiv:2207.14314 (NeurIPS 2021 workshop ML4PS), which plots only (E_RNN - E_DMRG)/N, Fig. 3(b)) [code](https://github.com/varbench/methods/blob/main/scripts/Heisenberg/triangular_196_O/vmc_2DgatedtensorizedRNN.sh)"
+   },
+   "record_at_freeze": null,
+   "published_results": 5,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_256_O",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 256,
+   "boundary": "O",
+   "params": {},
+   "per_site_divisor": 1024,
+   "target_at_freeze": {
+    "energy": -529.08,
+    "sigma": 0.088,
+    "energy_per_site": -0.5166796875,
+    "sigma_per_site": 0.0000859375,
+    "bound_type": "variational",
+    "method": "2D RNN",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Mohamed Hibat-Allah on 2022-02-15 as the S.S total -132.270, commit 36d51f4, x4 to the Pauli total by Dian Wu in 878bf7a (2022-07-11); method: M. Hibat-Allah, R. G. Melko and J. Carrasquilla, arXiv:2207.14314 (NeurIPS 2021 workshop ML4PS), which plots only (E_RNN - E_DMRG)/N, Fig. 3(b)) [code](https://github.com/varbench/methods/blob/main/scripts/Heisenberg/triangular_256_O/vmc_2DgatedtensorizedRNN.sh)"
+   },
+   "record_at_freeze": null,
+   "published_results": 4,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_324_P",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 324,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 1296,
+   "target_at_freeze": {
+    "energy": -715.007088,
+    "sigma": 0.001296,
+    "energy_per_site": -0.5517029999999999,
+    "sigma_per_site": 0.000001,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Viteritti, Rende, Sachdev & Carleo, Approaching the Thermodynamic Limit with Neural-Network Quantum States, arXiv:2602.02665"
+   },
+   "record_at_freeze": {
+    "energy": -715.392,
+    "sigma": 0.01296,
+    "energy_per_site": -0.552,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "extrapolated",
+    "method": "ViT",
+    "reference": "Viteritti, Rende, Sachdev & Carleo, Approaching the Thermodynamic Limit with Neural-Network Quantum States, arXiv:2602.02665"
+   },
+   "published_results": 8,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_576_P",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 576,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 2304,
+   "target_at_freeze": {
+    "energy": -1270.891008,
+    "sigma": 0.002304,
+    "energy_per_site": -0.551602,
+    "sigma_per_site": 0.000001,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Viteritti, Rende, Sachdev & Carleo, Approaching the Thermodynamic Limit with Neural-Network Quantum States, arXiv:2602.02665"
+   },
+   "record_at_freeze": {
+    "energy": -1271.55456,
+    "sigma": 0.02304,
+    "energy_per_site": -0.55189,
+    "sigma_per_site": 0.00001,
+    "bound_type": "extrapolated",
+    "method": "ViT",
+    "reference": "Viteritti, Rende, Sachdev & Carleo, Approaching the Thermodynamic Limit with Neural-Network Quantum States, arXiv:2602.02665"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Heisenberg/triangular_900_P",
+   "model": "Heisenberg",
+   "lattice": "triangular",
+   "n_sites": 900,
+   "boundary": "P",
+   "params": {},
+   "per_site_divisor": 3600,
+   "target_at_freeze": {
+    "energy": -1985.5008,
+    "sigma": 0.0036,
+    "energy_per_site": -0.551528,
+    "sigma_per_site": 0.000001,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Viteritti, Rende, Sachdev & Carleo, Approaching the Thermodynamic Limit with Neural-Network Quantum States, arXiv:2602.02665"
+   },
+   "record_at_freeze": {
+    "energy": -1986.48,
+    "sigma": 0.036,
+    "energy_per_site": -0.5518,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "extrapolated",
+    "method": "ViT",
+    "reference": "Viteritti, Rende, Sachdev & Carleo, Approaching the Thermodynamic Limit with Neural-Network Quantum States, arXiv:2602.02665"
+   },
+   "published_results": 4,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-14x16_224_P_98_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-14x16",
+   "n_sites": 224,
+   "boundary": "P",
+   "params": {
+    "Nf": 98,
+    "U": 8
+   },
+   "per_site_divisor": 224,
+   "target_at_freeze": {
+    "energy": -169.858976,
+    "sigma": 0.009632,
+    "energy_per_site": -0.7582990000000001,
+    "sigma_per_site": 0.000043,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 0fe5dbd; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x16_64_P_28_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x16",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "Nf": 28,
+    "U": 8
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -49.03872,
+    "sigma": 0.00064,
+    "energy_per_site": -0.76623,
+    "sigma_per_site": 0.00001,
+    "bound_type": "variational",
+    "method": "ACE",
+    "reference": "Gu et al., arXiv:2604.25775 (2026-04-28)"
+   },
+   "record_at_freeze": {
+    "energy": -49.11872,
+    "sigma": null,
+    "energy_per_site": -0.76748,
+    "sigma_per_site": null,
+    "bound_type": "extrapolated",
+    "method": "NNBF",
+    "reference": "Enhancing Neural Network Backflow, arXiv:2510.26906"
+   },
+   "published_results": 21,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x16_64_PO_26_2",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x16",
+   "n_sites": 64,
+   "boundary": "PO",
+   "params": {
+    "Nf": 26,
+    "U": 2
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -82.257,
+    "sigma": null,
+    "energy_per_site": -1.285265625,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x16_64_PO_26_2.jl)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x16_64_PO_26_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x16",
+   "n_sites": 64,
+   "boundary": "PO",
+   "params": {
+    "Nf": 26,
+    "U": 8
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -54.592,
+    "sigma": null,
+    "energy_per_site": -0.853,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x16_64_PO_26_8.jl)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x16_64_PO_28_2",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x16",
+   "n_sites": 64,
+   "boundary": "PO",
+   "params": {
+    "Nf": 28,
+    "U": 2
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -80.716,
+    "sigma": null,
+    "energy_per_site": -1.2611875,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x16_64_PO_28_2.jl)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x16_64_PO_28_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x16",
+   "n_sites": 64,
+   "boundary": "PO",
+   "params": {
+    "Nf": 28,
+    "U": 8
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -48.0533,
+    "sigma": null,
+    "energy_per_site": -0.7508328125,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x16_64_PO_28_8.jl)"
+   },
+   "record_at_freeze": {
+    "energy": -48.073,
+    "sigma": 0.004,
+    "energy_per_site": -0.751140625,
+    "sigma_per_site": 0.0000625,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x16_64_PO_28_8.jl)"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x16_64_PO_30_2",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x16",
+   "n_sites": 64,
+   "boundary": "PO",
+   "params": {
+    "Nf": 30,
+    "U": 2
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -78.074,
+    "sigma": null,
+    "energy_per_site": -1.21990625,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x16_64_PO_30_2.jl)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x16_64_PO_30_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x16",
+   "n_sites": 64,
+   "boundary": "PO",
+   "params": {
+    "Nf": 30,
+    "U": 8
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -40.824,
+    "sigma": null,
+    "energy_per_site": -0.637875,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x16_64_PO_30_8.jl)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x16_64_PO_32_2",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x16",
+   "n_sites": 64,
+   "boundary": "PO",
+   "params": {
+    "Nf": 32,
+    "U": 2
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -74.949,
+    "sigma": null,
+    "energy_per_site": -1.171078125,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x16_64_PO_32_2.jl)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x16_64_PO_32_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x16",
+   "n_sites": 64,
+   "boundary": "PO",
+   "params": {
+    "Nf": 32,
+    "U": 8
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -32.923,
+    "sigma": null,
+    "energy_per_site": -0.514421875,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x16_64_PO_32_8.jl)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x8_32_P_14_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x8",
+   "n_sites": 32,
+   "boundary": "P",
+   "params": {
+    "Nf": 14,
+    "U": 8
+   },
+   "per_site_divisor": 32,
+   "target_at_freeze": {
+    "energy": -24.586784,
+    "sigma": 0.000064,
+    "energy_per_site": -0.768337,
+    "sigma_per_site": 0.000002,
+    "bound_type": "variational",
+    "method": "NNBF",
+    "reference": "Enhancing Neural Network Backflow, arXiv:2510.26906"
+   },
+   "record_at_freeze": {
+    "energy": -24.589312,
+    "sigma": null,
+    "energy_per_site": -0.768416,
+    "sigma_per_site": null,
+    "bound_type": "extrapolated",
+    "method": "NNBF",
+    "reference": "Enhancing Neural Network Backflow, arXiv:2510.26906"
+   },
+   "published_results": 11,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-4x8_32_PO_14_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-4x8",
+   "n_sites": 32,
+   "boundary": "PO",
+   "params": {
+    "Nf": 14,
+    "U": 8
+   },
+   "per_site_divisor": 32,
+   "target_at_freeze": {
+    "energy": -23.5645,
+    "sigma": null,
+    "energy_per_site": -0.736390625,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x8_32_PO_14_8.jl)"
+   },
+   "record_at_freeze": {
+    "energy": -23.5658,
+    "sigma": 0.0003,
+    "energy_per_site": -0.73643125,
+    "sigma_per_site": 0.000009375,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/programs/dmrg_itensors_hubbard/rectangular-4x8_32_PO_14_8.jl)"
+   },
+   "published_results": 6,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-6x16_96_P_42_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-6x16",
+   "n_sites": 96,
+   "boundary": "P",
+   "params": {
+    "Nf": 42,
+    "U": 8
+   },
+   "per_site_divisor": 96,
+   "target_at_freeze": {
+    "energy": -71.8656,
+    "sigma": null,
+    "energy_per_site": -0.7486,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Marino, Becca & Tocchio, Stripes in the extended t-t' Hubbard model: A Variational Monte Carlo analysis, SciPost Phys. 12, 180 (2022), arXiv:2111.04623"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-6x32_192_P_84_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-6x32",
+   "n_sites": 192,
+   "boundary": "P",
+   "params": {
+    "Nf": 84,
+    "U": 8
+   },
+   "per_site_divisor": 192,
+   "target_at_freeze": {
+    "energy": -143.6736,
+    "sigma": null,
+    "energy_per_site": -0.7483,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Marino, Becca & Tocchio, Stripes in the extended t-t' Hubbard model: A Variational Monte Carlo analysis, SciPost Phys. 12, 180 (2022), arXiv:2111.04623"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-6x48_288_P_120_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-6x48",
+   "n_sites": 288,
+   "boundary": "P",
+   "params": {
+    "Nf": 120,
+    "U": 8
+   },
+   "per_site_divisor": 288,
+   "target_at_freeze": {
+    "energy": -236.376,
+    "sigma": 0.009,
+    "energy_per_site": -0.82075,
+    "sigma_per_site": 0.00003125,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/rectangular-6x48_288_P_120_8/VMC-stripes/vmc_hubbard.sh)"
+   },
+   "record_at_freeze": {
+    "energy": -237.816,
+    "sigma": 0.006,
+    "energy_per_site": -0.82575,
+    "sigma_per_site": 0.000020833333333333333,
+    "bound_type": "projected",
+    "method": "Fixed-node GFMC",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/rectangular-6x48_288_P_120_8/FN-stripes/fn_hubbard.sh)"
+   },
+   "published_results": 4,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-6x48_288_P_126_12",
+   "model": "Hubbard",
+   "lattice": "rectangular-6x48",
+   "n_sites": 288,
+   "boundary": "P",
+   "params": {
+    "Nf": 126,
+    "U": 12
+   },
+   "per_site_divisor": 288,
+   "target_at_freeze": {
+    "energy": -180.16,
+    "sigma": 0.01,
+    "energy_per_site": -0.6255555555555555,
+    "sigma_per_site": 0.00003472222222222222,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/rectangular-6x48_288_P_126_12/VMC-stripes/vmc_hubbard.sh)"
+   },
+   "record_at_freeze": {
+    "energy": -182.065,
+    "sigma": 0.005,
+    "energy_per_site": -0.6321701388888888,
+    "sigma_per_site": 0.00001736111111111111,
+    "bound_type": "projected",
+    "method": "Fixed-node GFMC",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/rectangular-6x48_288_P_126_12/FN-stripes/fn_hubbard.sh)"
+   },
+   "published_results": 6,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-6x48_288_P_126_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-6x48",
+   "n_sites": 288,
+   "boundary": "P",
+   "params": {
+    "Nf": 126,
+    "U": 8
+   },
+   "per_site_divisor": 288,
+   "target_at_freeze": {
+    "energy": -215.522,
+    "sigma": 0.009,
+    "energy_per_site": -0.7483402777777778,
+    "sigma_per_site": 0.00003125,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/rectangular-6x48_288_P_126_8/VMC-stripes/vmc_hubbard.sh)"
+   },
+   "record_at_freeze": {
+    "energy": -217.146,
+    "sigma": 0.006,
+    "energy_per_site": -0.7539791666666666,
+    "sigma_per_site": 0.000020833333333333333,
+    "bound_type": "projected",
+    "method": "Fixed-node GFMC",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/rectangular-6x48_288_P_126_8/FN-stripes/fn_hubbard.sh)"
+   },
+   "published_results": 6,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-6x48_288_P_132_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-6x48",
+   "n_sites": 288,
+   "boundary": "P",
+   "params": {
+    "Nf": 132,
+    "U": 8
+   },
+   "per_site_divisor": 288,
+   "target_at_freeze": {
+    "energy": -193.735,
+    "sigma": 0.009,
+    "energy_per_site": -0.6726909722222223,
+    "sigma_per_site": 0.00003125,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/rectangular-6x48_288_P_132_8/VMC-stripes/vmc_hubbard.sh)"
+   },
+   "record_at_freeze": {
+    "energy": -197.6256,
+    "sigma": 0.0576,
+    "energy_per_site": -0.6861999999999999,
+    "sigma_per_site": 0.00019999999999999998,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "Xu, Shi, Vitali, Qin & Zhang, Stripes and spin-density waves in the doped two-dimensional Hubbard model: Ground state phase diagram, Phys. Rev. Research 4, 013239 (2022), arXiv:2112.02187, doi:10.1103/PhysRevResearch.4.013239"
+   },
+   "published_results": 7,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-6x64_384_P_168_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-6x64",
+   "n_sites": 384,
+   "boundary": "P",
+   "params": {
+    "Nf": 168,
+    "U": 8
+   },
+   "per_site_divisor": 384,
+   "target_at_freeze": {
+    "energy": -287.3088,
+    "sigma": null,
+    "energy_per_site": -0.7482000000000001,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Marino, Becca & Tocchio, Stripes in the extended t-t' Hubbard model: A Variational Monte Carlo analysis, SciPost Phys. 12, 180 (2022), arXiv:2111.04623"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-8x16_128_P_56_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-8x16",
+   "n_sites": 128,
+   "boundary": "P",
+   "params": {
+    "Nf": 56,
+    "U": 8
+   },
+   "per_site_divisor": 128,
+   "target_at_freeze": {
+    "energy": -96.8704,
+    "sigma": null,
+    "energy_per_site": -0.7568,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "Tensor backflow",
+    "reference": "Investigating the Fermi-Hubbard model by the tensor-backflow method, Phys. Rev. B 113, 155121 (2026), arXiv:2507.01856"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-8x24_192_P_84_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-8x24",
+   "n_sites": 192,
+   "boundary": "P",
+   "params": {
+    "Nf": 84,
+    "U": 8
+   },
+   "per_site_divisor": 192,
+   "target_at_freeze": {
+    "energy": -144.8832,
+    "sigma": null,
+    "energy_per_site": -0.7545999999999999,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "Tensor backflow",
+    "reference": "Investigating the Fermi-Hubbard model by the tensor-backflow method, Phys. Rev. B 113, 155121 (2026), arXiv:2507.01856"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-8x32_256_P_112_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-8x32",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 112,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -193.2032,
+    "sigma": null,
+    "energy_per_site": -0.7547,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "Tensor backflow",
+    "reference": "Investigating the Fermi-Hubbard model by the tensor-backflow method, Phys. Rev. B 113, 155121 (2026), arXiv:2507.01856"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/rectangular-8x48_384_P_176_8",
+   "model": "Hubbard",
+   "lattice": "rectangular-8x48",
+   "n_sites": 384,
+   "boundary": "P",
+   "params": {
+    "Nf": 176,
+    "U": 8
+   },
+   "per_site_divisor": 384,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": -263.1936,
+    "sigma": 0.0768,
+    "energy_per_site": -0.6854,
+    "sigma_per_site": 0.00019999999999999998,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "Xu, Shi, Vitali, Qin & Zhang, Stripes and spin-density waves in the doped two-dimensional Hubbard model: Ground state phase diagram, Phys. Rev. Research 4, 013239 (2022), arXiv:2112.02187, doi:10.1103/PhysRevResearch.4.013239"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_100_P_40_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "Nf": 40,
+    "U": 4
+   },
+   "per_site_divisor": 100,
+   "target_at_freeze": {
+    "energy": -111.097,
+    "sigma": 0.006,
+    "energy_per_site": -1.11097,
+    "sigma_per_site": 0.00006,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "Levy, Morales & Zhang, Automatic Order Detection and Restoration Through Systematically Improvable Variational Wave Functions, Phys. Rev. Research 6, 013237 (2024), arXiv:2308.08594"
+   },
+   "record_at_freeze": {
+    "energy": -111.35,
+    "sigma": 0.02,
+    "energy_per_site": -1.1135,
+    "sigma_per_site": 0.0002,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "[paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.125132)"
+   },
+   "published_results": 4,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_144_P_58_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "Nf": 58,
+    "U": 4
+   },
+   "per_site_divisor": 144,
+   "target_at_freeze": {
+    "energy": -159.2784,
+    "sigma": null,
+    "energy_per_site": -1.1061,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "Tensor backflow",
+    "reference": "Investigating the Fermi-Hubbard model by the tensor-backflow method, Phys. Rev. B 113, 155121 (2026), arXiv:2507.01856"
+   },
+   "record_at_freeze": {
+    "energy": -159.6816,
+    "sigma": 0.0288,
+    "energy_per_site": -1.1089,
+    "sigma_per_site": 0.00019999999999999998,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "[paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.125132)"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_106_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 106,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -214.496512,
+    "sigma": 0.014848,
+    "energy_per_site": -0.837877,
+    "sigma_per_site": 0.000058,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_108_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 108,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -207.867904,
+    "sigma": 0.01408,
+    "energy_per_site": -0.811984,
+    "sigma_per_site": 0.000055,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_109_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 109,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -204.534272,
+    "sigma": 0.013312,
+    "energy_per_site": -0.798962,
+    "sigma_per_site": 0.000052,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_110_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 110,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -201.037056,
+    "sigma": 0.015104,
+    "energy_per_site": -0.785301,
+    "sigma_per_site": 0.000059,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_111_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 111,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -197.620992,
+    "sigma": 0.014592,
+    "energy_per_site": -0.771957,
+    "sigma_per_site": 0.000057,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_112_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 112,
+    "U": 4
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -263.465472,
+    "sigma": 0.004608,
+    "energy_per_site": -1.029162,
+    "sigma_per_site": 0.000018,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 260d316; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_112_6",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 112,
+    "U": 6
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -221.676288,
+    "sigma": 0.005632,
+    "energy_per_site": -0.865923,
+    "sigma_per_site": 0.000022,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 260d316; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_112_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 112,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -194.215,
+    "sigma": 0.007,
+    "energy_per_site": -0.75865234375,
+    "sigma_per_site": 0.00002734375,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 4a0a929; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 16,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_113_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 113,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -190.605312,
+    "sigma": 0.006656,
+    "energy_per_site": -0.744552,
+    "sigma_per_site": 0.000026,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_114_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 114,
+    "U": 4
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -258.174464,
+    "sigma": 0.005632,
+    "energy_per_site": -1.008494,
+    "sigma_per_site": 0.000022,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 260d316; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_114_6",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 114,
+    "U": 6
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -215.188224,
+    "sigma": 0.005632,
+    "energy_per_site": -0.840579,
+    "sigma_per_site": 0.000022,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 260d316; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_114_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 114,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -186.978304,
+    "sigma": 0.012032,
+    "energy_per_site": -0.730384,
+    "sigma_per_site": 0.000047,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_115_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 115,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -183.254272,
+    "sigma": 0.011776,
+    "energy_per_site": -0.715837,
+    "sigma_per_site": 0.000046,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_116_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 116,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -179.546368,
+    "sigma": 0.008192,
+    "energy_per_site": -0.701353,
+    "sigma_per_site": 0.000032,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_117_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 117,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -175.81568,
+    "sigma": 0.013312,
+    "energy_per_site": -0.68678,
+    "sigma_per_site": 0.000052,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_118_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 118,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -172.069888,
+    "sigma": 0.013312,
+    "energy_per_site": -0.672148,
+    "sigma_per_site": 0.000052,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_P_120_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "Nf": 120,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -163.975424,
+    "sigma": 0.012544,
+    "energy_per_site": -0.640529,
+    "sigma_per_site": 0.000049,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 22e553a; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_PA_107_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "PA",
+   "params": {
+    "Nf": 107,
+    "U": 8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -210.772224,
+    "sigma": 0.00768,
+    "energy_per_site": -0.823329,
+    "sigma_per_site": 0.00003,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 80040ee; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_PA_107_8_t12",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "PA",
+   "params": {
+    "Nf": 107,
+    "U": 8,
+    "t1": 1,
+    "t2": -0.25
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -204.64,
+    "sigma": 0.0095,
+    "energy_per_site": -0.799375,
+    "sigma_per_site": 0.000037109375,
+    "bound_type": "variational",
+    "method": "mVMC + RBM",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by M. Schmid on 2021-10-28 in the collected overview of the Imada group's benchmarks, commit 175fe34, and in the instance's file since ca26677, 2021-11-14) [code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/square_256_PA_107_8_t12/mVMC/mVMC.sh)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_256_PA_107_8_t12_UV1V2",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "PA",
+   "params": {
+    "Nf": 107,
+    "U": 8,
+    "t1": 1,
+    "t2": -0.25,
+    "V1": 1,
+    "V2": 0.5
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": 322.35,
+    "sigma": 0.00696,
+    "energy_per_site": 1.2591796875,
+    "sigma_per_site": 0.0000271875,
+    "bound_type": "variational",
+    "method": "mVMC + RBM",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by M. Schmid on 2021-10-28 in the collected overview of the Imada group's benchmarks, commit 175fe34, and in the instance's file since ca26677, 2021-11-14) [code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/square_256_PA_107_8_t12_UV1V2/mVMC/mVMC.sh)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_36_P_12_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 36,
+   "boundary": "P",
+   "params": {
+    "Nf": 12,
+    "U": 4
+   },
+   "per_site_divisor": 36,
+   "target_at_freeze": {
+    "energy": -42.6024,
+    "sigma": 0.0036,
+    "energy_per_site": -1.1834,
+    "sigma_per_site": 0.00009999999999999999,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "Levy, Morales & Zhang, Automatic Order Detection and Restoration Through Systematically Improvable Variational Wave Functions, Phys. Rev. Research 6, 013237 (2024), arXiv:2308.08594"
+   },
+   "record_at_freeze": {
+    "energy": -42.669,
+    "sigma": 0.00144,
+    "energy_per_site": -1.18525,
+    "sigma_per_site": 0.00004,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "[paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.125132)"
+   },
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_36_P_24_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 36,
+   "boundary": "P",
+   "params": {
+    "Nf": 24,
+    "U": 4
+   },
+   "per_site_divisor": 36,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": 5.33124,
+    "sigma": 0.00144,
+    "energy_per_site": 0.14809,
+    "sigma_per_site": 0.00004,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "[paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.125132)"
+   },
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_50_P_21_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 50,
+   "boundary": "P",
+   "params": {
+    "Nf": 21,
+    "U": 8
+   },
+   "per_site_divisor": 50,
+   "target_at_freeze": {
+    "energy": -41.1638,
+    "sigma": 0.0016,
+    "energy_per_site": -0.823276,
+    "sigma_per_site": 0.000032,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Sandro Sorella on 2022-02-12, commit 57902a2; method: S. Sorella, Phys. Rev. B 107, 115133 (2023), arXiv:2101.07045, whose main text and Supplemental Material print twist-averaged energies only)"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_64_P_14_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "Nf": 14,
+    "U": 4
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": -68.5952,
+    "sigma": 0.00128,
+    "energy_per_site": -1.0718,
+    "sigma_per_site": 0.00002,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "[paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.125132)"
+   },
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_64_P_22_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "Nf": 22,
+    "U": 4
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -75.8144,
+    "sigma": null,
+    "energy_per_site": -1.1846,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "Tensor backflow",
+    "reference": "Investigating the Fermi-Hubbard model by the tensor-backflow method, Phys. Rev. B 113, 155121 (2026), arXiv:2507.01856"
+   },
+   "record_at_freeze": {
+    "energy": -75.8912,
+    "sigma": 0.0128,
+    "energy_per_site": -1.1858,
+    "sigma_per_site": 0.0002,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "[paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.125132)"
+   },
+   "published_results": 4,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_64_P_25_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "Nf": 25,
+    "U": 4
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -72.35072,
+    "sigma": 0.00512,
+    "energy_per_site": -1.13048,
+    "sigma_per_site": 0.00008,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "Levy, Morales & Zhang, Automatic Order Detection and Restoration Through Systematically Improvable Variational Wave Functions, Phys. Rev. Research 6, 013237 (2024), arXiv:2308.08594"
+   },
+   "record_at_freeze": {
+    "energy": -72.48192,
+    "sigma": 0.00192,
+    "energy_per_site": -1.13253,
+    "sigma_per_site": 0.00003,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "Levy, Morales & Zhang, Automatic Order Detection and Restoration Through Systematically Improvable Variational Wave Functions, Phys. Rev. Research 6, 013237 (2024), arXiv:2308.08594 (Table I, constrained-path AFQMC, a cell without the release-constraint star; the column names AFQMC [17, 18], H. Shi and S. Zhang, Phys. Rev. B 88, 125132 (2013) and J. P. F. LeBlanc et al., Phys. Rev. X 5, 041041 (2015), as its method references)"
+   },
+   "published_results": 5,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_64_P_25_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "Nf": 25,
+    "U": 8
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -58.549,
+    "sigma": 0.001031,
+    "energy_per_site": -0.914828125,
+    "sigma_per_site": 0.000016109375,
+    "bound_type": "variational",
+    "method": "mVMC + RBM",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Hubbard/square_64_P_25_8/mVMC/mVMC.sh)"
+   },
+   "record_at_freeze": {
+    "energy": -59.2128,
+    "sigma": 0.0064,
+    "energy_per_site": -0.9252,
+    "sigma_per_site": 0.0001,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "Levy, Morales & Zhang, Automatic Order Detection and Restoration Through Systematically Improvable Variational Wave Functions, Phys. Rev. Research 6, 013237 (2024), arXiv:2308.08594 (Table I, constrained-path AFQMC, a cell without the release-constraint star; the column names AFQMC [17, 18], H. Shi and S. Zhang, Phys. Rev. B 88, 125132 (2013) and J. P. F. LeBlanc et al., Phys. Rev. X 5, 041041 (2015), as its method references)"
+   },
+   "published_results": 5,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_64_P_28_4",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "Nf": 28,
+    "U": 4
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -64.89024,
+    "sigma": 0.00512,
+    "energy_per_site": -1.01391,
+    "sigma_per_site": 0.00008,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "Levy, Morales & Zhang, Automatic Order Detection and Restoration Through Systematically Improvable Variational Wave Functions, Phys. Rev. Research 6, 013237 (2024), arXiv:2308.08594"
+   },
+   "record_at_freeze": {
+    "energy": -65.23072,
+    "sigma": 0.00384,
+    "energy_per_site": -1.01923,
+    "sigma_per_site": 0.00006,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "Levy, Morales & Zhang, Automatic Order Detection and Restoration Through Systematically Improvable Variational Wave Functions, Phys. Rev. Research 6, 013237 (2024), arXiv:2308.08594 (Table I, constrained-path AFQMC, a cell without the release-constraint star; the column names AFQMC [17, 18], H. Shi and S. Zhang, Phys. Rev. B 88, 125132 (2013) and J. P. F. LeBlanc et al., Phys. Rev. X 5, 041041 (2015), as its method references)"
+   },
+   "published_results": 4,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Hubbard/square_64_P_28_8",
+   "model": "Hubbard",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "Nf": 28,
+    "U": 8
+   },
+   "per_site_divisor": 64,
+   "target_at_freeze": {
+    "energy": -47.8016,
+    "sigma": 0.0128,
+    "energy_per_site": -0.7469,
+    "sigma_per_site": 0.0002,
+    "bound_type": "variational",
+    "method": "VAFQMC",
+    "reference": "Levy, Morales & Zhang, Automatic Order Detection and Restoration Through Systematically Improvable Variational Wave Functions, Phys. Rev. Research 6, 013237 (2024), arXiv:2308.08594"
+   },
+   "record_at_freeze": {
+    "energy": -48.7424,
+    "sigma": 0.0064,
+    "energy_per_site": -0.7616,
+    "sigma_per_site": 0.0001,
+    "bound_type": "projected",
+    "method": "CP-AFQMC",
+    "reference": "Levy, Morales & Zhang, Automatic Order Detection and Restoration Through Systematically Improvable Variational Wave Functions, Phys. Rev. Research 6, 013237 (2024), arXiv:2308.08594 (Table I, constrained-path AFQMC, a cell without the release-constraint star; the column names AFQMC [17, 18], H. Shi and S. Zhang, Phys. Rev. B 88, 125132 (2013) and J. P. F. LeBlanc et al., Phys. Rev. X 5, 041041 (2015), as its method references)"
+   },
+   "published_results": 10,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "Impurity/TB-DMFT_119",
+   "model": "Impurity",
+   "lattice": "TB-DMFT",
+   "n_sites": 119,
+   "boundary": null,
+   "params": {},
+   "per_site_divisor": null,
+   "target_at_freeze": {
+    "energy": -1307.5645416735742,
+    "sigma": null,
+    "energy_per_site": null,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Impurity/TB-DMFT_119.py)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "Impurity model"
+   }
+  },
+  {
+   "instance_id": "Impurity/TB-DMFT_19",
+   "model": "Impurity",
+   "lattice": "TB-DMFT",
+   "n_sites": 19,
+   "boundary": null,
+   "params": {},
+   "per_site_divisor": null,
+   "target_at_freeze": {
+    "energy": -224.33607130480158,
+    "sigma": null,
+    "energy_per_site": null,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Impurity/TB-DMFT_19.py)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "Impurity model"
+   }
+  },
+  {
+   "instance_id": "Impurity/TB-DMFT_309",
+   "model": "Impurity",
+   "lattice": "TB-DMFT",
+   "n_sites": 309,
+   "boundary": null,
+   "params": {},
+   "per_site_divisor": null,
+   "target_at_freeze": {
+    "energy": -3378.6762368403315,
+    "sigma": null,
+    "energy_per_site": null,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Impurity/TB-DMFT_309.py)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "Impurity model"
+   }
+  },
+  {
+   "instance_id": "Impurity/TB-DMFT_9",
+   "model": "Impurity",
+   "lattice": "TB-DMFT",
+   "n_sites": 9,
+   "boundary": null,
+   "params": {},
+   "per_site_divisor": null,
+   "target_at_freeze": {
+    "energy": -112.90428524370733,
+    "sigma": null,
+    "energy_per_site": null,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Impurity/TB-DMFT_9.py)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "Impurity model"
+   }
+  },
+  {
+   "instance_id": "Impurity/TB-DMFT-SOC_119",
+   "model": "Impurity",
+   "lattice": "TB-DMFT-SOC",
+   "n_sites": 119,
+   "boundary": null,
+   "params": {},
+   "per_site_divisor": null,
+   "target_at_freeze": {
+    "energy": -1305.3902308399847,
+    "sigma": null,
+    "energy_per_site": null,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Impurity/TB-DMFT-SOC_119.py)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "Impurity model"
+   }
+  },
+  {
+   "instance_id": "Impurity/TB-DMFT-SOC_19",
+   "model": "Impurity",
+   "lattice": "TB-DMFT-SOC",
+   "n_sites": 19,
+   "boundary": null,
+   "params": {},
+   "per_site_divisor": null,
+   "target_at_freeze": {
+    "energy": -219.76691098485568,
+    "sigma": null,
+    "energy_per_site": null,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Impurity/TB-DMFT-SOC_19.py)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "Impurity model"
+   }
+  },
+  {
+   "instance_id": "Impurity/TB-DMFT-SOC_309",
+   "model": "Impurity",
+   "lattice": "TB-DMFT-SOC",
+   "n_sites": 309,
+   "boundary": null,
+   "params": {},
+   "per_site_divisor": null,
+   "target_at_freeze": {
+    "energy": -3351.757359219215,
+    "sigma": null,
+    "energy_per_site": null,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Impurity/TB-DMFT-SOC_309.py)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "Impurity model"
+   }
+  },
+  {
+   "instance_id": "Impurity/TB-DMFT-SOC_9",
+   "model": "Impurity",
+   "lattice": "TB-DMFT-SOC",
+   "n_sites": 9,
+   "boundary": null,
+   "params": {},
+   "per_site_divisor": null,
+   "target_at_freeze": {
+    "energy": -112.87177033736539,
+    "sigma": null,
+    "energy_per_site": null,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[code](https://github.com/varbench/methods/blob/main/scripts/Impurity/TB-DMFT-SOC_9.py)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "Impurity model"
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.1",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.1
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -252.546,
+    "sigma": null,
+    "energy_per_site": -0.631365,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.2",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.2
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -237.1928,
+    "sigma": null,
+    "energy_per_site": -0.592982,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.3",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.3
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -222.7648,
+    "sigma": null,
+    "energy_per_site": -0.5569120000000001,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 5,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.4",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.4
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -209.7444,
+    "sigma": null,
+    "energy_per_site": -0.5243610000000001,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": {
+    "energy": -210.12,
+    "sigma": null,
+    "energy_per_site": -0.5253,
+    "sigma_per_site": null,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "published_results": 16,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.44",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.44
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -205.092,
+    "sigma": null,
+    "energy_per_site": -0.51273,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "Li, Chen, Xiao, Wang, Jiang, Zhao, Lin, An, Liang & He, Bridging the Gap between Deep Learning and Frustrated Quantum Spin System for Extreme-Scale Simulations on New Generation of Sunway Supercomputer, IEEE Trans. Parallel Distrib. Syst. 33, 2846 (2022), doi:10.1109/TPDS.2022.3145163, arXiv:2108.13830"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.45",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.45
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -204.004,
+    "sigma": 0.004,
+    "energy_per_site": -0.51001,
+    "sigma_per_site": 0.00001,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "record_at_freeze": {
+    "energy": -204.4,
+    "sigma": null,
+    "energy_per_site": -0.511,
+    "sigma_per_site": null,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "published_results": 13,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.46",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.46
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -202.976,
+    "sigma": null,
+    "energy_per_site": -0.50744,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.48",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.48
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -200.924,
+    "sigma": null,
+    "energy_per_site": -0.50231,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.5",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.5
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -199.07756,
+    "sigma": 0.00008,
+    "energy_per_site": -0.4976939,
+    "sigma_per_site": 2.0000000000000002e-7,
+    "bound_type": "variational",
+    "method": "CNN-MPS",
+    "reference": "arXiv:2603.14425, Disentangling Tensor Network States with Deep Neural Networks"
+   },
+   "record_at_freeze": {
+    "energy": -199.52,
+    "sigma": null,
+    "energy_per_site": -0.4988,
+    "sigma_per_site": null,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "published_results": 64,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.55",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.55
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -194.772,
+    "sigma": 0.012,
+    "energy_per_site": -0.48693,
+    "sigma_per_site": 0.00003,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "record_at_freeze": {
+    "energy": -195.2,
+    "sigma": null,
+    "energy_per_site": -0.488,
+    "sigma_per_site": null,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "published_results": 21,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.6",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.6
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -191.356,
+    "sigma": null,
+    "energy_per_site": -0.47839,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 9,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.65",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.65
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -197.8688,
+    "sigma": null,
+    "energy_per_site": -0.494672,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.7",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.7
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -207.614,
+    "sigma": null,
+    "energy_per_site": -0.519035,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 5,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.8",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.8
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -229.652,
+    "sigma": null,
+    "energy_per_site": -0.5741299999999999,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 7,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_0.9",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 0.9
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -253.668,
+    "sigma": null,
+    "energy_per_site": -0.63417,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 4,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_100_P_1",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 100,
+   "boundary": "P",
+   "params": {
+    "J2": 1
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -278.68,
+    "sigma": 0.008,
+    "energy_per_site": -0.6967,
+    "sigma_per_site": 0.00002,
+    "bound_type": "variational",
+    "method": "RBM",
+    "reference": "Chen, Hendry, Weinberg & Feiguin, Systematic improvement of neural network quantum states using Lanczos, Adv. Neural Inf. Process. Syst. 35 (NeurIPS 2022), 7490-7503, arXiv:2206.14307"
+   },
+   "record_at_freeze": null,
+   "published_results": 7,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_144_P_0.44",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "J2": 0.44
+   },
+   "per_site_divisor": 576,
+   "target_at_freeze": {
+    "energy": -295.056,
+    "sigma": null,
+    "energy_per_site": -0.51225,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "Li, Chen, Xiao, Wang, Jiang, Zhao, Lin, An, Liang & He, Bridging the Gap between Deep Learning and Frustrated Quantum Spin System for Extreme-Scale Simulations on New Generation of Sunway Supercomputer, IEEE Trans. Parallel Distrib. Syst. 33, 2846 (2022), doi:10.1109/TPDS.2022.3145163, arXiv:2108.13830"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_144_P_0.45",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "J2": 0.45
+   },
+   "per_site_divisor": 576,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": -293.0688,
+    "sigma": 0.0576,
+    "energy_per_site": -0.5088,
+    "sigma_per_site": 0.00009999999999999999,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_144_P_0.46",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "J2": 0.46
+   },
+   "per_site_divisor": 576,
+   "target_at_freeze": {
+    "energy": -292.01472,
+    "sigma": null,
+    "energy_per_site": -0.50697,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_144_P_0.48",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "J2": 0.48
+   },
+   "per_site_divisor": 576,
+   "target_at_freeze": {
+    "energy": -289.05408,
+    "sigma": null,
+    "energy_per_site": -0.50183,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_144_P_0.5",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "J2": 0.5
+   },
+   "per_site_divisor": 576,
+   "target_at_freeze": {
+    "energy": -286.265664,
+    "sigma": null,
+    "energy_per_site": -0.496989,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 12,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_144_P_0.52",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "J2": 0.52
+   },
+   "per_site_divisor": 576,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": -283.392,
+    "sigma": 0.0576,
+    "energy_per_site": -0.492,
+    "sigma_per_site": 0.00009999999999999999,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_144_P_0.55",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "J2": 0.55
+   },
+   "per_site_divisor": 576,
+   "target_at_freeze": {
+    "energy": -279.975168,
+    "sigma": 0.00576,
+    "energy_per_site": -0.486068,
+    "sigma_per_site": 0.00001,
+    "bound_type": "variational",
+    "method": "GCNN",
+    "reference": "Roth, Szabo & MacDonald, High-accuracy variational Monte Carlo for frustrated magnets with deep neural networks, Phys. Rev. B 108, 054410 (2023), arXiv:2211.07749"
+   },
+   "record_at_freeze": {
+    "energy": -280.0512,
+    "sigma": 0.1152,
+    "energy_per_site": -0.48619999999999997,
+    "sigma_per_site": 0.00019999999999999998,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 5,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_144_P_0.6",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "J2": 0.6
+   },
+   "per_site_divisor": 576,
+   "target_at_freeze": {
+    "energy": -274.8384,
+    "sigma": null,
+    "energy_per_site": -0.47714999999999996,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": {
+    "energy": -275.5584,
+    "sigma": 0.1728,
+    "energy_per_site": -0.4784,
+    "sigma_per_site": 0.00030000000000000003,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_196_P_0.4",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 196,
+   "boundary": "P",
+   "params": {
+    "J2": 0.4
+   },
+   "per_site_divisor": 784,
+   "target_at_freeze": {
+    "energy": -409.93008,
+    "sigma": 0.00784,
+    "energy_per_site": -0.52287,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "record_at_freeze": {
+    "energy": -410.43184,
+    "sigma": 0.01568,
+    "energy_per_site": -0.52351,
+    "sigma_per_site": 0.000019999999999999998,
+    "bound_type": "extrapolated",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_196_P_0.44",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 196,
+   "boundary": "P",
+   "params": {
+    "J2": 0.44
+   },
+   "per_site_divisor": 784,
+   "target_at_freeze": {
+    "energy": -401.408,
+    "sigma": null,
+    "energy_per_site": -0.512,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "Li, Chen, Xiao, Wang, Jiang, Zhao, Lin, An, Liang & He, Bridging the Gap between Deep Learning and Frustrated Quantum Spin System for Extreme-Scale Simulations on New Generation of Sunway Supercomputer, IEEE Trans. Parallel Distrib. Syst. 33, 2846 (2022), doi:10.1109/TPDS.2022.3145163, arXiv:2108.13830"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_196_P_0.45",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 196,
+   "boundary": "P",
+   "params": {
+    "J2": 0.45
+   },
+   "per_site_divisor": 784,
+   "target_at_freeze": {
+    "energy": -399.04816,
+    "sigma": 0.00784,
+    "energy_per_site": -0.5089899999999999,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "record_at_freeze": {
+    "energy": -399.47152,
+    "sigma": 0.00784,
+    "energy_per_site": -0.50953,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "extrapolated",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_196_P_0.46",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 196,
+   "boundary": "P",
+   "params": {
+    "J2": 0.46
+   },
+   "per_site_divisor": 784,
+   "target_at_freeze": {
+    "energy": -397.292,
+    "sigma": null,
+    "energy_per_site": -0.5067499999999999,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_196_P_0.48",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 196,
+   "boundary": "P",
+   "params": {
+    "J2": 0.48
+   },
+   "per_site_divisor": 784,
+   "target_at_freeze": {
+    "energy": -393.24656,
+    "sigma": null,
+    "energy_per_site": -0.50159,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_196_P_0.5",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 196,
+   "boundary": "P",
+   "params": {
+    "J2": 0.5
+   },
+   "per_site_divisor": 784,
+   "target_at_freeze": {
+    "energy": -389.44416,
+    "sigma": null,
+    "energy_per_site": -0.49674,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": {
+    "energy": -389.82048,
+    "sigma": 0.01568,
+    "energy_per_site": -0.49722,
+    "sigma_per_site": 0.000019999999999999998,
+    "bound_type": "extrapolated",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "published_results": 13,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_196_P_0.55",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 196,
+   "boundary": "P",
+   "params": {
+    "J2": 0.55
+   },
+   "per_site_divisor": 784,
+   "target_at_freeze": {
+    "energy": -380.87504,
+    "sigma": null,
+    "energy_per_site": -0.48581,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": {
+    "energy": -381.77664,
+    "sigma": 0.0392,
+    "energy_per_site": -0.48696,
+    "sigma_per_site": 0.000049999999999999996,
+    "bound_type": "extrapolated",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "published_results": 5,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_196_P_0.6",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 196,
+   "boundary": "P",
+   "params": {
+    "J2": 0.6
+   },
+   "per_site_divisor": 784,
+   "target_at_freeze": {
+    "energy": -373.79552,
+    "sigma": null,
+    "energy_per_site": -0.47678000000000004,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_256_P_0.44",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "J2": 0.44
+   },
+   "per_site_divisor": 1024,
+   "target_at_freeze": {
+    "energy": -524.16512,
+    "sigma": null,
+    "energy_per_site": -0.51188,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "Li, Chen, Xiao, Wang, Jiang, Zhao, Lin, An, Liang & He, Bridging the Gap between Deep Learning and Frustrated Quantum Spin System for Extreme-Scale Simulations on New Generation of Sunway Supercomputer, IEEE Trans. Parallel Distrib. Syst. 33, 2846 (2022), doi:10.1109/TPDS.2022.3145163, arXiv:2108.13830"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_256_P_0.45",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "J2": 0.45
+   },
+   "per_site_divisor": 1024,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": -520.9088,
+    "sigma": 0.1024,
+    "energy_per_site": -0.5087,
+    "sigma_per_site": 0.0001,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_256_P_0.46",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "J2": 0.46
+   },
+   "per_site_divisor": 1024,
+   "target_at_freeze": {
+    "energy": -518.77888,
+    "sigma": null,
+    "energy_per_site": -0.50662,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_256_P_0.48",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "J2": 0.48
+   },
+   "per_site_divisor": 1024,
+   "target_at_freeze": {
+    "energy": -513.50528,
+    "sigma": null,
+    "energy_per_site": -0.50147,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_256_P_0.5",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "J2": 0.5
+   },
+   "per_site_divisor": 1024,
+   "target_at_freeze": {
+    "energy": -508.839936,
+    "sigma": 0.000512,
+    "energy_per_site": -0.496914,
+    "sigma_per_site": 5e-7,
+    "bound_type": "variational",
+    "method": "CNN-MPS",
+    "reference": "arXiv:2603.14425, Disentangling Tensor Network States with Deep Neural Networks"
+   },
+   "record_at_freeze": null,
+   "published_results": 11,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_256_P_0.52",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "J2": 0.52
+   },
+   "per_site_divisor": 1024,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": -503.808,
+    "sigma": 0.1024,
+    "energy_per_site": -0.492,
+    "sigma_per_site": 0.0001,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_256_P_0.55",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "J2": 0.55
+   },
+   "per_site_divisor": 1024,
+   "target_at_freeze": {
+    "energy": -497.3056,
+    "sigma": null,
+    "energy_per_site": -0.48565,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": {
+    "energy": -497.5616,
+    "sigma": 0.4096,
+    "energy_per_site": -0.4859,
+    "sigma_per_site": 0.0004,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 5,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_256_P_0.6",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 256,
+   "boundary": "P",
+   "params": {
+    "J2": 0.6
+   },
+   "per_site_divisor": 1024,
+   "target_at_freeze": {
+    "energy": -487.99744,
+    "sigma": null,
+    "energy_per_site": -0.47656,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": {
+    "energy": -489.1648,
+    "sigma": 0.3072,
+    "energy_per_site": -0.4777,
+    "sigma_per_site": 0.0003,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_324_P_0.4",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 324,
+   "boundary": "P",
+   "params": {
+    "J2": 0.4
+   },
+   "per_site_divisor": 1296,
+   "target_at_freeze": {
+    "energy": -677.27664,
+    "sigma": 0.01296,
+    "energy_per_site": -0.52259,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "record_at_freeze": {
+    "energy": -678.23568,
+    "sigma": 0.01296,
+    "energy_per_site": -0.52333,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "extrapolated",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_324_P_0.44",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 324,
+   "boundary": "P",
+   "params": {
+    "J2": 0.44
+   },
+   "per_site_divisor": 1296,
+   "target_at_freeze": {
+    "energy": -663.27984,
+    "sigma": null,
+    "energy_per_site": -0.5117900000000001,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "Li, Chen, Xiao, Wang, Jiang, Zhao, Lin, An, Liang & He, Bridging the Gap between Deep Learning and Frustrated Quantum Spin System for Extreme-Scale Simulations on New Generation of Sunway Supercomputer, IEEE Trans. Parallel Distrib. Syst. 33, 2846 (2022), doi:10.1109/TPDS.2022.3145163, arXiv:2108.13830"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_324_P_0.45",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 324,
+   "boundary": "P",
+   "params": {
+    "J2": 0.45
+   },
+   "per_site_divisor": 1296,
+   "target_at_freeze": {
+    "energy": -659.32704,
+    "sigma": 0.01296,
+    "energy_per_site": -0.50874,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "variational",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "record_at_freeze": {
+    "energy": -660.1824,
+    "sigma": 0.01296,
+    "energy_per_site": -0.5094000000000001,
+    "sigma_per_site": 0.000009999999999999999,
+    "bound_type": "extrapolated",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_324_P_0.46",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 324,
+   "boundary": "P",
+   "params": {
+    "J2": 0.46
+   },
+   "per_site_divisor": 1296,
+   "target_at_freeze": {
+    "energy": -656.43696,
+    "sigma": null,
+    "energy_per_site": -0.50651,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_324_P_0.48",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 324,
+   "boundary": "P",
+   "params": {
+    "J2": 0.48
+   },
+   "per_site_divisor": 1296,
+   "target_at_freeze": {
+    "energy": -649.80144,
+    "sigma": null,
+    "energy_per_site": -0.50139,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_324_P_0.5",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 324,
+   "boundary": "P",
+   "params": {
+    "J2": 0.5
+   },
+   "per_site_divisor": 1296,
+   "target_at_freeze": {
+    "energy": -643.480848,
+    "sigma": null,
+    "energy_per_site": -0.49651300000000004,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": {
+    "energy": -644.33232,
+    "sigma": 0.02592,
+    "energy_per_site": -0.49717,
+    "sigma_per_site": 0.000019999999999999998,
+    "bound_type": "extrapolated",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "published_results": 6,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_324_P_0.55",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 324,
+   "boundary": "P",
+   "params": {
+    "J2": 0.55
+   },
+   "per_site_divisor": 1296,
+   "target_at_freeze": {
+    "energy": -629.29872,
+    "sigma": null,
+    "energy_per_site": -0.48557,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": {
+    "energy": -631.12608,
+    "sigma": 0.0648,
+    "energy_per_site": -0.48698,
+    "sigma_per_site": 0.000049999999999999996,
+    "bound_type": "extrapolated",
+    "method": "VMC",
+    "reference": "Hu, Becca, Parola & Sorella, Direct evidence for a gapless Z2 spin liquid by frustrating Neel antiferromagnetism, Phys. Rev. B 88, 060402 (2013), arXiv:1304.2630"
+   },
+   "published_results": 5,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_324_P_0.6",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 324,
+   "boundary": "P",
+   "params": {
+    "J2": 0.6
+   },
+   "per_site_divisor": 1296,
+   "target_at_freeze": {
+    "energy": -617.56992,
+    "sigma": null,
+    "energy_per_site": -0.47652,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "CNN",
+    "reference": "X. Liang, M. Li, Q. Xiao, J. Chen, C. Yang, H. An and L. He, Deep learning representations for quantum many-body systems on heterogeneous hardware, Mach. Learn.: Sci. Technol. 4, 015035 (2023) (doi:10.1088/2632-2153/acc56a), Table 1 (journal version only; arXiv:2204.07816v1 treats J2 = 0.5 alone)"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_36_P_0.45",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 36,
+   "boundary": "P",
+   "params": {
+    "J2": 0.45
+   },
+   "per_site_divisor": 144,
+   "target_at_freeze": {
+    "energy": -74.25432,
+    "sigma": null,
+    "energy_per_site": -0.5156550000000001,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "record_at_freeze": {
+    "energy": -74.25504,
+    "sigma": 0.000144,
+    "energy_per_site": -0.51566,
+    "sigma_per_site": 0.000001,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "published_results": 13,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_400_P_0.5",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 400,
+   "boundary": "P",
+   "params": {
+    "J2": 0.5
+   },
+   "per_site_divisor": 1600,
+   "target_at_freeze": {
+    "energy": -794.87792,
+    "sigma": 0.00096,
+    "energy_per_site": -0.49679870000000004,
+    "sigma_per_site": 6e-7,
+    "bound_type": "variational",
+    "method": "CNN-MPS",
+    "reference": "arXiv:2603.14425, Disentangling Tensor Network States with Deep Neural Networks"
+   },
+   "record_at_freeze": {
+    "energy": -794.944,
+    "sigma": 0.016,
+    "energy_per_site": -0.49683999999999995,
+    "sigma_per_site": 0.00001,
+    "bound_type": "extrapolated",
+    "method": "ViT",
+    "reference": "Viteritti, Rende, Sachdev & Carleo, Approaching the Thermodynamic Limit with Neural-Network Quantum States, arXiv:2602.02665"
+   },
+   "published_results": 3,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.1",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.1
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -162.071808,
+    "sigma": null,
+    "energy_per_site": -0.633093,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.2",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.2
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -152.194048,
+    "sigma": null,
+    "energy_per_site": -0.594508,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.3",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.3
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -142.92352,
+    "sigma": null,
+    "energy_per_site": -0.558295,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.4",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.4
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -134.567168,
+    "sigma": 0.000256,
+    "energy_per_site": -0.525653,
+    "sigma_per_site": 0.000001,
+    "bound_type": "variational",
+    "method": "RBM + PP",
+    "reference": "Nomura & Imada, Dirac-type nodal spin liquid revealed by refined quantum many-body solver using neural-network wave function, correlation ratio, and level spectroscopy, Phys. Rev. X 11, 031034 (2021), arXiv:2005.14142, doi:10.1103/PhysRevX.11.031034"
+   },
+   "record_at_freeze": {
+    "energy": -134.7072,
+    "sigma": 0.0256,
+    "energy_per_site": -0.5262,
+    "sigma_per_site": 0.0001,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "published_results": 11,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.45",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.45
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -130.900736,
+    "sigma": 0.000256,
+    "energy_per_site": -0.511331,
+    "sigma_per_site": 0.000001,
+    "bound_type": "variational",
+    "method": "RBM + PP",
+    "reference": "Nomura & Imada, Dirac-type nodal spin liquid revealed by refined quantum many-body solver using neural-network wave function, correlation ratio, and level spectroscopy, Phys. Rev. X 11, 031034 (2021), arXiv:2005.14142, doi:10.1103/PhysRevX.11.031034"
+   },
+   "record_at_freeze": {
+    "energy": -130.9696,
+    "sigma": 0.0256,
+    "energy_per_site": -0.5116,
+    "sigma_per_site": 0.0001,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "published_results": 12,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.48",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.48
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": -128.8704,
+    "sigma": 0.1024,
+    "energy_per_site": -0.5034,
+    "sigma_per_site": 0.0004,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.5",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.5
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -127.73465,
+    "sigma": 0.00048,
+    "energy_per_site": -0.4989634765625,
+    "sigma_per_site": 0.000001875,
+    "bound_type": "variational",
+    "method": "RBM + PP",
+    "reference": "[paper](https://doi.org/10.1126/science.adg9774) (Wu et al., Science 386, 296 (2024), arXiv:2302.04919: VarBench dataset, number uploaded by Yusuke Nomura on 2021-10-13, commit 5dec36f; method: Y. Nomura and M. Imada, Phys. Rev. X 11, 031034 (2021), arXiv:2005.14142, which prints the 8x8 RBM+PP energy with the simplified point-group projection, -0.498886(1), not this full-A1 value)"
+   },
+   "record_at_freeze": {
+    "energy": -127.7952,
+    "sigma": 0.0256,
+    "energy_per_site": -0.4992,
+    "sigma_per_site": 0.0001,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "published_results": 27,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.52",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.52
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": null,
+   "record_at_freeze": {
+    "energy": -126.4896,
+    "sigma": 0.0256,
+    "energy_per_site": -0.4941,
+    "sigma_per_site": 0.0001,
+    "bound_type": "extrapolated",
+    "method": "TPS",
+    "reference": "Wang, Gu, Verstraete & Wen, Tensor-product state approach to spin-1/2 square J1-J2 antiferromagnetic Heisenberg model: Evidence for deconfined quantum criticality, Phys. Rev. B 94, 075143 (2016), arXiv:1112.3331"
+   },
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.55",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.55
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -125.13792,
+    "sigma": 0.000512,
+    "energy_per_site": -0.48882,
+    "sigma_per_site": 0.000002,
+    "bound_type": "variational",
+    "method": "RBM + PP",
+    "reference": "Nomura & Imada, Dirac-type nodal spin liquid revealed by refined quantum many-body solver using neural-network wave function, correlation ratio, and level spectroscopy, Phys. Rev. X 11, 031034 (2021), arXiv:2005.14142, doi:10.1103/PhysRevX.11.031034"
+   },
+   "record_at_freeze": {
+    "energy": -125.2096,
+    "sigma": 0.0256,
+    "energy_per_site": -0.4891,
+    "sigma_per_site": 0.0001,
+    "bound_type": "extrapolated",
+    "method": "DMRG",
+    "reference": "Gong, Zhu, Sheng, Motrunich & Fisher, Plaquette ordered phase and quantum phase diagram in the spin-1/2 J1-J2 square Heisenberg model, Phys. Rev. Lett. 113, 027201 (2014), arXiv:1311.5962"
+   },
+   "published_results": 13,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.6",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.6
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -123.291136,
+    "sigma": null,
+    "energy_per_site": -0.481606,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 2,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.65",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.65
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -127.567872,
+    "sigma": null,
+    "energy_per_site": -0.498312,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.7",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.7
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -133.655296,
+    "sigma": null,
+    "energy_per_site": -0.522091,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.8",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.8
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -147.79136,
+    "sigma": null,
+    "energy_per_site": -0.57731,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_0.9",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 0.9
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -163.204608,
+    "sigma": null,
+    "energy_per_site": -0.637518,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/square_64_P_1",
+   "model": "J1J2",
+   "lattice": "square",
+   "n_sites": 64,
+   "boundary": "P",
+   "params": {
+    "J2": 1
+   },
+   "per_site_divisor": 256,
+   "target_at_freeze": {
+    "energy": -179.330048,
+    "sigma": null,
+    "energy_per_site": -0.700508,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "ViT",
+    "reference": "Extremely slow scaling of minimal Hamming distance in quantum sampling data, arXiv:2606.04558"
+   },
+   "record_at_freeze": null,
+   "published_results": 1,
+   "verifier": {
+    "supported": true
+   }
+  },
+  {
+   "instance_id": "J1J2/triangular_108_P_0.125",
+   "model": "J1J2",
+   "lattice": "triangular",
+   "n_sites": 108,
+   "boundary": "P",
+   "params": {
+    "J2": 0.125
+   },
+   "per_site_divisor": 432,
+   "target_at_freeze": {
+    "energy": -221.47776,
+    "sigma": 0.03888,
+    "energy_per_site": -0.51268,
+    "sigma_per_site": 0.00008999999999999999,
+    "bound_type": "variational",
+    "method": "GCNN",
+    "reference": "Roth, Szabo & MacDonald, High-accuracy variational Monte Carlo for frustrated magnets with deep neural networks, Phys. Rev. B 108, 054410 (2023), arXiv:2211.07749"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "J1J2/triangular_144_P_0.125",
+   "model": "J1J2",
+   "lattice": "triangular",
+   "n_sites": 144,
+   "boundary": "P",
+   "params": {
+    "J2": 0.125
+   },
+   "per_site_divisor": 576,
+   "target_at_freeze": {
+    "energy": -295.01568,
+    "sigma": 0.05184,
+    "energy_per_site": -0.51218,
+    "sigma_per_site": 0.00008999999999999999,
+    "bound_type": "variational",
+    "method": "GCNN",
+    "reference": "Roth, Szabo & MacDonald, High-accuracy variational Monte Carlo for frustrated magnets with deep neural networks, Phys. Rev. B 108, 054410 (2023), arXiv:2211.07749"
+   },
+   "record_at_freeze": null,
+   "published_results": 3,
+   "verifier": {
+    "supported": false,
+    "reason": "triangular lattice"
+   }
+  },
+  {
+   "instance_id": "TFIsing/square_144_O_3",
+   "model": "TFIsing",
+   "lattice": "square",
+   "n_sites": 144,
+   "boundary": "O",
+   "params": {
+    "h": 3
+   },
+   "per_site_divisor": 144,
+   "target_at_freeze": {
+    "energy": -457.041866,
+    "sigma": 0.000027,
+    "energy_per_site": -3.1739018472222225,
+    "sigma_per_site": 1.875e-7,
+    "bound_type": "variational",
+    "method": "2D RNN",
+    "reference": "[paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.023358) (Hibat-Allah et al., Phys. Rev. Research 2, 023358 (2020), arXiv:2002.02973, Appendix F, Table II, h = 3, 2DRNN: -3.1739018(2); the stored digits are the authors' upload to the VarBench dataset, by Mohamed Hibat-Allah on 2021-12-13, commit 75dddcc, which linked their own code) [code](https://github.com/varbench/methods/blob/main/scripts/TFIsing/square_144_O_3/vmc_2DRNN.sh)"
+   },
+   "record_at_freeze": null,
+   "published_results": 5,
+   "verifier": {
+    "supported": false,
+    "reason": "TFIsing model"
+   }
+  },
+  {
+   "instance_id": "TFIsing/square_400_O_3",
+   "model": "TFIsing",
+   "lattice": "square",
+   "n_sites": 400,
+   "boundary": "O",
+   "params": {
+    "h": 3
+   },
+   "per_site_divisor": 400,
+   "target_at_freeze": {
+    "energy": -1272.788,
+    "sigma": null,
+    "energy_per_site": -3.18197,
+    "sigma_per_site": null,
+    "bound_type": "variational",
+    "method": "DMRG",
+    "reference": "[paper](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.4.010317)"
+   },
+   "record_at_freeze": null,
+   "published_results": 7,
+   "verifier": {
+    "supported": false,
+    "reason": "TFIsing model"
+   }
+  }
+ ]
+}
