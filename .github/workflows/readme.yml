@@ -1,0 +1,53 @@
+# Keep the README's generated blocks (badges, leaderboard, citation) current: scripts/readme.mjs
+# rewrites them from QMBL's current data and this repository's results/, with the code that builds
+# qmbl.org's Open Problems pages, and this workflow commits README.md when a block changed. Every
+# day (QMBL's data changes the targets and the energies to beat), after a push to main that changes
+# results/ or the target code, and when started by hand. A push made here with GITHUB_TOKEN starts
+# no other workflow, so it cannot loop.
+#
+# Until launch day QMBL's main branch has no scripts/open_problems.mjs; readme.mjs then leaves
+# README.md as it is and this run succeeds without a commit.
+name: readme
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - results/**
+      - scripts/readme.mjs
+      - scripts/targets.mjs
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme
+  cancel-in-progress: false
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: quantum-many-body-leaderboard/quantum-many-body-leaderboard
+          path: qmbl
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Rewrite the generated blocks
+        run: node scripts/readme.mjs
+        env:
+          QMBL_DIR: qmbl
+      - name: Commit README.md if a block changed
+        run: |
+          if git diff --quiet -- README.md; then echo "README.md unchanged"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "README: generated blocks from QMBL's current data (readme workflow)" -- README.md
+          git pull --rebase origin main
+          git push origin HEAD:main

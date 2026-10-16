@@ -1,0 +1,33 @@
+# Check the format of every entry on every pull request: metadata.yaml against
+# schema/metadata.schema.json, the folder layout, one live entry per system and instance,
+# and that every result belongs to an entry. Nothing here measures a state: QMBL re-measures
+# each entry on its own hardware before merging (maintainer/README.md).
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # QMBL's current data decides which instances are open (scripts/targets.mjs).
+      - uses: actions/checkout@v4
+        with:
+          repository: quantum-many-body-leaderboard/quantum-many-body-leaderboard
+          path: qmbl
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node --test scripts/validate.test.mjs scripts/readme.test.mjs
+        env:
+          QMBL_DIR: qmbl
+      - run: node scripts/validate.mjs
+        env:
+          QMBL_DIR: qmbl

@@ -1,0 +1,31 @@
+{
+  "title": "QMBL: Open Problems",
+  "upload_type": "dataset",
+  "license": "Apache-2.0",
+  "version": "0.1.0",
+  "description": "QMBL: Open Problems is a record book of the state of the art in quantum many-body simulation for problems with no exact ground-state energy. Scientists and AI systems should use the shared results to build on each other's work more efficiently and advance frontier science. This snapshot holds the launch target list (targets/v1.json, 153 instances frozen from QMBL v0.4.0; 152 are open today, as one has since been solved exactly), the entry format and its checks, and the maintainer's re-measurement flow; the verifier is quantum-many-body-leaderboard/verifier.",
+  "creators": [
+    {
+      "name": "Zerweck, Tristan"
+    },
+    {
+      "name": "Carrasquilla, Juan"
+    }
+  ],
+  "keywords": [
+    "quantum many-body",
+    "open problems",
+    "benchmark",
+    "AI for science",
+    "variational Monte Carlo",
+    "neural quantum states",
+    "ground state"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22753734",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ]
+}
