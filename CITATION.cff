@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: "QMBL: Open Problems"
+message: "If you use this benchmark, please cite it. Individual energies should cite the primary paper named on the row."
+type: dataset
+authors:
+  - family-names: Zerweck
+    given-names: Tristan
+  - family-names: Carrasquilla
+    given-names: Juan
+license: Apache-2.0
+version: 0.1.0
+date-released: "2026-10-17"
+doi: 10.5281/zenodo.23439787
+repository-code: "https://github.com/quantum-many-body-leaderboard/open-problems"
+url: "https://qmbl.org/open-problems/"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23439787
+    description: "Concept DOI - always resolves to the latest release"
+  - type: doi
+    value: 10.5281/zenodo.23439788
+    description: "v0.1.0 snapshot: 153 launch targets frozen from QMBL v0.4.0"
+abstract: >-
+  QMBL: Open Problems is a record book of the state of the art in quantum many-body simulation
+  for problems with no exact ground-state energy. Scientists and AI systems should use the shared
+  results to build on each other's work more efficiently and advance frontier science.
+references:
+  - type: dataset
+    title: "QMBL: the Quantum Many-Body Leaderboard"
+    doi: 10.5281/zenodo.22753734
+    authors:
+      - family-names: Zerweck
+        given-names: Tristan
+      - family-names: Carrasquilla
+        given-names: Juan

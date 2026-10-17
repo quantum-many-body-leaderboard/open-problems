@@ -34,6 +34,11 @@ test("citation: the concept DOI even where a version DOI is listed first", () =>
   assert.equal(citationOf(cff(VERSION + CONCEPT)).doi, "10.5281/zenodo.22753734");
 });
 
+test("citation: this repository's own CITATION.cff", () => {
+  const own = citationOf(fs.readFileSync(new URL("../CITATION.cff", import.meta.url), "utf8"));
+  assert.deepEqual(own, { title: "QMBL: Open Problems", head: "T. Zerweck and J. Carrasquilla", doi: "10.5281/zenodo.23439787", year: "2026" });
+});
+
 test("citation: a CITATION.cff without authors is an error, not an empty citation", () => {
   assert.throws(() => citationOf('title: "QMBL"\ndoi: 10.5281/zenodo.1\ndate-released: "2026-01-01"\n'), /authors/);
 });

@@ -9,7 +9,7 @@
 // The scoring and the labels are QMBL's own code, so the README, the pages and QMBL's README
 // cannot disagree: scripts/open_problems.mjs (loadOpenProblems, score), which builds the pages,
 // and scripts/readme_table.mjs (instance labels, quoting, markers), which writes QMBL's README.
-// The citation comes from QMBL's CITATION.cff. QMBL is read from a checkout of its repository at
+// The citation comes from this repository's CITATION.cff. QMBL is read from a checkout of its repository at
 // QMBL_DIR, by default ../qmbl beside this one; CI checks it out into qmbl/.
 //
 // Until launch day QMBL's main branch has no scripts/open_problems.mjs (the pages are merged
@@ -20,6 +20,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadQmbl } from "./targets.mjs";
+import { citationOf } from "./citation.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const README = path.join(ROOT, "README.md");
@@ -35,20 +36,8 @@ const gapText = g => (g == null ? "n/a" : g === 0 ? "0" : `${g < 0 ? "−" : "+"
 const badge = (label, message, colour) =>
   `https://img.shields.io/badge/${[label, message].map(s => encodeURIComponent(String(s).replace(/-/g, "--").replace(/_/g, "__"))).join("-")}-${colour}`;
 
-// The citation: the title, the authors, the year of the latest release and the concept DOI, which
-// always resolves to the latest release, from QMBL's CITATION.cff. QMBL: Open Problems has no DOI
-// of its own yet, so it cites QMBL under QMBL's own title (2026-10-16).
-export function citationOf(cff) {
-  const authors = [...cff.matchAll(/- family-names:\s*"?([^"\n]+?)"?\s*\n\s+given-names:\s*"?([^"\n]+?)"?\s*$/gm)]
-    .map(([, family, given]) => `${given[0]}. ${family}`);
-  const head = authors.length > 2 ? `${authors.slice(0, -1).join(", ")} and ${authors.at(-1)}` : authors.join(" and ");
-  const doi = cff.match(/- type: doi\s*\n\s+value:\s*"?([^"\n]+?)"?\s*\n\s+description:\s*"?Concept DOI/)?.[1]
-    ?? cff.match(/^doi:\s*"?([^"\n]+?)"?\s*$/m)?.[1];
-  const year = cff.match(/^date-released:\s*"?(\d{4})/m)?.[1];
-  const title = cff.match(/^title:\s*"?([^"\n]+?)"?\s*$/m)?.[1];
-  if (!title || !head || !doi || !year) throw new Error("CITATION.cff: title, authors, concept DOI or date-released not found");
-  return { title, head, doi, year };
-}
+// The citation (title, authors, concept DOI, year) from a CITATION.cff: scripts/citation.mjs.
+export { citationOf };
 
 // Spliced by index, never by String.replace: a replacement containing $' or $& would paste the
 // file into itself.
@@ -72,7 +61,7 @@ async function main() {
   const { instances, perSiteDivisor } = await loadQmbl(QMBL);
   const op = await loadOpenProblems(instances, ROOT);
   const { targets, entries, systems } = score(op, instances);
-  const { title, head, doi, year } = citationOf(fs.readFileSync(path.join(QMBL, "CITATION.cff"), "utf8"));
+  const { title, head, doi, year } = citationOf(fs.readFileSync(path.join(ROOT, "CITATION.cff"), "utf8"));
   // QMBL's source cache (paper names and links) lives in its checkout, under sources/.
   const cwd = process.cwd();
   process.chdir(QMBL);
@@ -146,7 +135,7 @@ async function main() {
     `[![status: beta](${badge("status", "beta", "eb6834")})](#details)`,
   ];
   const citation = [
-    "QMBL: Open Problems has no DOI of its own yet. Its targets are QMBL's open instances, so cite QMBL by its concept DOI, which always resolves to the latest release:", "",
+    "Cite QMBL: Open Problems by its concept DOI, which always resolves to the latest release:", "",
     `> ${head}, *${title}*, Zenodo (${year}).`,
     `> [${doi}](https://doi.org/${doi})`, "",
     "Individual energies should cite the primary paper named on the row, not this repository.",
