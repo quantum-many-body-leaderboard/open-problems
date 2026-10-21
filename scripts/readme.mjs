@@ -132,7 +132,6 @@ async function main() {
     `[![License: Apache 2.0](${badge("license", "Apache-2.0", "blue")})](LICENSE)`,
     `[![open problems](${badge("open problems", targets.length, "104281")})](#leaderboard)`,
     `[![entries](${badge("entries", entries.length, "success")})](#leaderboard)`,
-    `[![status: beta](${badge("status", "beta", "eb6834")})](#details)`,
   ];
   const citation = [
     "Cite QMBL: Open Problems by its concept DOI, which always resolves to the latest release:", "",
