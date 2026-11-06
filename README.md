@@ -154,7 +154,7 @@ The verifier can measure 180 of them today.
 | square 16x16, J = 0.7, Jd = 1 | **-0.37642** &#9675; | VMC (Gutzwiller) [Chen & Liu (2026)](https://doi.org/10.1103/hvlq-d179) |  | not yet (ShastrySutherland model) |
 | square 16x16, J = 0.8, Jd = 1 | **-0.448881** &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  | not yet (ShastrySutherland model) |
 | square 18x18, J = 0.8, Jd = 1 | **-0.448859** &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  | not yet (ShastrySutherland model) |
-| square 20x20, open, J = 0.8, Jd = 1 | **-0.442928(3)** | PEPS [Liu et al. (2024)](https://doi.org/10.1103/physrevlett.133.026502) |  | not yet (ShastrySutherland model) |
+| square 20x20, open, J = 0.8, Jd = 1 | **-0.442928(3)** | VMC (PEPS) [Liu et al. (2024)](https://doi.org/10.1103/physrevlett.133.026502) |  | not yet (ShastrySutherland model) |
 
 </details>
 
