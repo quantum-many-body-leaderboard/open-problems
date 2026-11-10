@@ -80,13 +80,19 @@ async function main() {
     return table.quote(row.energy / f, row.sigma == null ? null : row.sigma / f).text;
   };
   const method = row => `${cell(table.shorten(units.methodLabel(row), 46))} ${cite.citeCell(row, cache)}`;
-  const targetRow = ({ t, inst, row, estimate, first }) => {
-    const [beat, how] = row ? [`**${quoted(row, inst)}**${table.marks(row)}`, method(row)]
-      : first ? [`**${table.quote(first.energy_per_site, first.sigma_per_site).text}**`, `${cell(first.system)}, the first verified state`]
-      : ["none yet", "the first verified state sets it"];
-    const est = estimate ? `${quoted(estimate, inst)}${table.marks(estimate)} ${units.boundLabel(estimate)}, ${cite.citeCell(estimate, cache)}` : "";
-    const verifier = t.verifier.supported ? "yes" : `not yet (${cell(t.verifier.reason)})`;
-    return `| ${table.instanceLabel(inst)} | ${beat} | ${how} | ${est} | ${verifier} |`;
+  // As QMBL's README lists an instance: one line per best value, the best variational value
+  // first (bold: the bar an entry is scored against), then QMBL's other best values, in QMBL's
+  // columns. An instance with no variational energy shows no best variational line, and which
+  // instances the verifier builds is said in the line above the tables, not per row (2026-11-11).
+  const targetRows = ({ inst, row, others, first }) => {
+    const lines = [
+      ...(row ? [["best variational", `**${quoted(row, inst)}**${table.marks(row)}`, method(row), cite.codeCell(row)]]
+        : first ? [["best variational", `**${table.quote(first.energy_per_site, first.sigma_per_site).text}**`, `${cell(first.system)}, verified entry`, ""]]
+        : []),
+      ...(others ?? []).map(([c, r]) => [`best ${c}`, `${quoted(r, inst)}${table.marks(r)}`, method(r), cite.codeCell(r)]),
+    ];
+    if (!lines.length) lines.push(["", "", "", ""]);
+    return lines.map((l, k) => `| ${k ? "" : table.instanceLabel(inst)} | ${l.join(" | ")} |`);
   };
 
   // Only once there are entries, as on the pages (2026-10-09): the systems above the
@@ -106,8 +112,8 @@ async function main() {
     ...groups.flatMap(([name, g]) => [
       "<details>",
       `<summary><b>${name}</b>: ${g.length} instance${g.length === 1 ? "" : "s"}, energies as <code>${units.perSiteLabel(g[0].inst)}</code></summary>`, "",
-      "| instance | energy to beat | method | record (estimate) | verifier |", "|---|---|---|---|---|",
-      ...g.map(targetRow), "", "</details>", ""]),
+      "| instance | value | energy | method | code |", "|---|---|---|---|---|",
+      ...g.flatMap(targetRows), "", "</details>", ""]),
   ];
 
   const order = new Map(groups.flatMap(([, g]) => g).map((x, k) => [x, k]));
@@ -132,6 +138,7 @@ async function main() {
     `[![License: Apache 2.0](${badge("license", "Apache-2.0", "blue")})](LICENSE)`,
     `[![open problems](${badge("open problems", targets.length, "104281")})](#leaderboard)`,
     `[![entries](${badge("entries", entries.length, "success")})](#leaderboard)`,
+    `[![agents: API · MCP](${badge("agents", "API · MCP", "8A2BE2")})](#use-qmbl-open-problems-with-your-agent)`,
   ];
   const citation = [
     "Cite QMBL: Open Problems by its concept DOI, which always resolves to the latest release:", "",
