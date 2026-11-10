@@ -21,8 +21,12 @@ import { pathToFileURL } from "node:url";
 // has a flagged exact (stochastic) row, so it is not a target.
 export const isSolved = inst => inst.rows.some(r => r.bound_type === "exact");
 
-// What the verifier (quantum-many-body-leaderboard/verifier) can build today (qrec_verify/hamiltonians.py `build`).
+// What the verifier (quantum-many-body-leaderboard/verifier) can build today (qrec_verify/hamiltonians.py `build`;
+// the electron gas since v1.8: qrec_verify/continuum.py, the cells of QMBL's checks/heg-hf/hf.mjs).
+const HEG_CELLS = /^(sc|bcc|fcc|square|triangular|rect-\d+(\.\d+)?(x\d+(\.\d+)?){1,2})$/;
 export function verifierSupport(inst) {
+  if (inst.model === "HEG2D" || inst.model === "HEG3D")
+    return HEG_CELLS.test(inst.lattice) ? { supported: true } : { supported: false, reason: `${inst.lattice} cell` };
   const flat = inst.lattice === "square" || /^rectangular-\d+x\d+$/.test(inst.lattice);
   if (inst.model === "Hubbard") return flat ? { supported: true } : { supported: false, reason: `${inst.lattice} lattice` };
   if (inst.model === "J1J2" || inst.model === "Heisenberg") {
