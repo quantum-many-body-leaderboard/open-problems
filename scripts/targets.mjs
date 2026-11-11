@@ -24,12 +24,19 @@ export const isSolved = inst => inst.rows.some(r => r.bound_type === "exact");
 // What the verifier (quantum-many-body-leaderboard/verifier) can build today (qrec_verify/hamiltonians.py `build`;
 // the electron gas since v1.8: qrec_verify/continuum.py, the cells of QMBL's checks/heg-hf/hf.mjs).
 const HEG_CELLS = /^(sc|bcc|fcc|square|triangular|rect-\d+(\.\d+)?(x\d+(\.\d+)?){1,2})$/;
-// verifier v1.9 (quantum-many-body-leaderboard/verifier 4c20631): which instances it can build. Mirrors
-// qrec_verify/instance.py (spin clusters), tj.py (t-J clusters), chem.py (the 128-orbital bound) and impurity.py.
+// verifier v1.10 (quantum-many-body-leaderboard/verifier 42875c6): which QMBL instances it can build. Mirrors
+// qrec_verify/instance.py (spin clusters), tj.py (t-J clusters), chem.py and chem_large.py (hydrogen), molecule.py and impurity.py.
 const isSquareN = n => Number.isInteger(Math.sqrt(n));
 const AO_PER_H = { "sto-3g": 1, "sto-6g": 1, "6-31g": 2, "cc-pvdz": 5, "cc-pvtz": 14, "cc-pvqz": 30, "cc-pv5z": 55,
                    "aug-cc-pvdz": 9, "aug-cc-pvtz": 23, "aug-cc-pvqz": 46 };
 const MAX_ORBITALS = 128;            // qrec_verify/chem.py MAX_ORBITALS
+const MAX_CHOLESKY_ORBITALS = 850;   // v1.10: largest n with chem_large.estimate_gb(n) <= chem_large.MAX_GB (64)
+// v1.10: Gaussian-basis chains above 128 orbitals whose overlap matrix has an eigenvalue below 1e-10 (chem.loewdin
+// refuses them; computed with pyscf, work/logs/r2_large_basis.tsv), keyed model:n_sites:basis:R
+const NEARLY_SINGULAR = new Set(["Hchain:10:aug-cc-pvqz:1", "Hchain:10:aug-cc-pvtz:1", "Hchain:10:cc-pv5z:1",
+  "Hchain:30:cc-pvdz:1", "Hchain:30:cc-pvdz:1.2", "Hchain:30:cc-pvtz:1", "Hchain:30:cc-pvtz:1.2",
+  "Hchain:50:cc-pvdz:1", "Hchain:50:cc-pvdz:1.2", "Hchain:50:cc-pvtz:1", "Hchain:50:cc-pvtz:1.2",
+  "Hchain:50:cc-pvtz:1.4"]);
 
 function spinCluster(inst) {
   // the Heisenberg-type clusters of qrec_verify/instance.py (triangular_dims, frustrated_dims) and lattice_dims
@@ -88,15 +95,23 @@ export function verifierSupport(inst) {
   }
   if (inst.model === "Hchain" || inst.model === "Hsheet") {
     const basis = String(inst.params?.basis ?? "none").toLowerCase();
-    if (basis === "none") return no("continuous space (basis none)");
     if (b !== "O") return no("periodic cell");
+    // v1.10: continuous space (qrec_verify/molecule.py): open chains and square sheets
+    if (basis === "none")
+      return inst.model === "Hchain" || isSquareN(inst.n_sites) ? { supported: true } : no("sheet shape");
     if (inst.n_sites % 2) return no("odd electron number");
     const per = AO_PER_H[basis];
     if (per == null) return no(`basis ${inst.params.basis}`);
-    return per * inst.n_sites <= MAX_ORBITALS ? { supported: true } : no(`${per * inst.n_sites} orbitals (at most ${MAX_ORBITALS})`);
+    const n = per * inst.n_sites;
+    if (n <= MAX_ORBITALS) return { supported: true };
+    // v1.10: above 128 orbitals, Cholesky-factorised integrals (qrec_verify/chem_large.py); determinant states only
+    if (n > MAX_CHOLESKY_ORBITALS) return no(`${n} orbitals (Cholesky vectors above 64 GB)`);
+    if (NEARLY_SINGULAR.has(`${inst.model}:${inst.n_sites}:${basis}:${inst.params.R}`))
+      return no("nearly linearly dependent basis (overlap eigenvalue below 1e-10)");
+    return { supported: true, note: "Slater-determinant states (det:) only above 128 orbitals" };
   }
   if (inst.model === "Impurity")
-    return /^(SB-IMP|SB-DMFT-MT-HF|SB-DMFT-MT-AHF|SB-DMFT-MI-HF|TB-DMFT)$/.test(inst.lattice)
+    return /^(SB-IMP|SB-DMFT-MT-HF|SB-DMFT-MT-AHF|SB-DMFT-MI-HF|TB-DMFT|TB-DMFT-SOC)$/.test(inst.lattice)   // v1.10: + SOC
       ? { supported: true } : no(`${inst.lattice} impurity model`);
   return no(`${inst.model} model`);
 }
