@@ -219,7 +219,7 @@ The verifier can measure 503 of them today.
 
 | instance | value | energy | method | code |
 |---|---|---|---|---|
-| rectangular 10x16, open, U = 8, n = 0.875 | best variational | **-0.7163(3)** | simple update (fPEPS) [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) |  |
+| rectangular 10x16, open, U = 8, n = 0.875 | best variational | **-0.7163(3)** | simple update (fPEPS) [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) |  |
 | rectangular 10x16, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7434** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 | rectangular 12x16, open, U = 8, n = 0.875 | best variational | **-0.72212** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) |  |
 | rectangular 12x16, U = 8, n = 0.875 | best variational | **-0.7562** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
@@ -230,8 +230,8 @@ The verifier can measure 503 of them today.
 | rectangular 16x32, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7371** &#9675; | VMC (SCALE) [Gu et al. (2026)](https://doi.org/10.1103/2kq2-5g5q) | *uses [LaQX](https://github.com/bytedance/laqx)* |
 |  | best projected | -0.7406 &#9675; | FN-GFMC (SCALE) [Gu et al. (2026)](https://doi.org/10.1103/2kq2-5g5q) |  |
 | rectangular 4x12, U = 8, n = 0.875 | best variational | **-0.76608(1)** | VMC (HFPS) [Chen et al. (2026)](https://doi.org/10.1073/pnas.2535288123) | *uses [Quantax](https://github.com/ChenAo-Phys/quantax)* |
-| rectangular 4x16, open, U = 8, n = 0.875 | best variational | **-0.6853698** &#9675; | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-|  | best extrapolated | -0.68554(4) | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+| rectangular 4x16, open, U = 8, n = 0.875 | best variational | **-0.6853698** &#9675; | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+|  | best extrapolated | -0.68554(4) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
 | rectangular 4x16, U = 8, n = 0.875 | best variational | **-0.76623(1)** | VMC (ACE) [Gu et al. (2026)](https://doi.org/10.1103/2kq2-5g5q) | *uses [LaQX](https://github.com/bytedance/laqx)* |
 |  | best projected | -0.76647(2) | FN-GFMC (ACE) [Gu et al. (2026)](https://doi.org/10.1103/2kq2-5g5q) |  |
 |  | best extrapolated | -0.76748 &#9675; | VMC (NNBF) [Loehr & Clark (2025)](https://doi.org/10.48550/arxiv.2510.26906) |  |
@@ -282,9 +282,9 @@ The verifier can measure 503 of them today.
 | rectangular 8x10, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7427** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 | rectangular 8x12, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7456** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 | rectangular 8x16, open, U = 8, n = 0.875 | best variational | **-0.71309** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) |  |
-|  | best extrapolated | -0.718(1) | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-| rectangular 8x16, open, U = 8, n = 0.9375 | best variational | **-0.6019(2)** | simple update (fPEPS) [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) |  |
-|  | best extrapolated | -0.6043(6) | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+|  | best extrapolated | -0.718(1) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+| rectangular 8x16, open, U = 8, n = 0.9375 | best variational | **-0.6019(2)** | simple update (fPEPS) [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) |  |
+|  | best extrapolated | -0.6043(6) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
 | rectangular 8x16, U = 8, n = 0.875 | best variational | **-0.7568** &#9675; | VMC (tensor BF) [Liang (2025)](https://doi.org/10.48550/arXiv.2507.01856) |  |
 | rectangular 8x16, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7419** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 | rectangular 8x18, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7421** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
@@ -295,22 +295,22 @@ The verifier can measure 503 of them today.
 | rectangular 8x32, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.742** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 |  | best extrapolated | -0.7491 &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 | rectangular 8x48, U = 8, n &asymp; 0.9167 | best projected | -0.6854(2) | CP-AFQMC (stripe) [Xu et al. (2022)](https://doi.org/10.1103/physrevresearch.4.013239) |  |
-| square 4x4, open, U = 8, n = 0.875 | best variational | **-0.6326183** &#9675; | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-|  | best extrapolated | -0.6326190(1) | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-| square 4x4, open, U = 8, n = 1 | best variational | **-0.4255259** &#9675; | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-|  | best extrapolated | -0.42552596(1) | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-| square 6x6, open, U = 8, n &asymp; 0.8889 | best variational | **-0.6573063** &#9675; | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-|  | best extrapolated | -0.65768(8) | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-| square 6x6, open, U = 8, n &asymp; 0.9444 | best variational | **-0.5599001** &#9675; | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-|  | best extrapolated | -0.55997(2) | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+| square 4x4, open, U = 8, n = 0.875 | best variational | **-0.6326183** &#9675; | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+|  | best extrapolated | -0.6326190(1) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+| square 4x4, open, U = 8, n = 1 | best variational | **-0.4255259** &#9675; | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+|  | best extrapolated | -0.42552596(1) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+| square 6x6, open, U = 8, n &asymp; 0.8889 | best variational | **-0.6573063** &#9675; | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+|  | best extrapolated | -0.65768(8) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+| square 6x6, open, U = 8, n &asymp; 0.9444 | best variational | **-0.5599001** &#9675; | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+|  | best extrapolated | -0.55997(2) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
 | square 6x6, U = 4, n &asymp; 0.6667 | best variational | **-1.1834(1)** | VAFQMC [Levy et al. (2023)](https://doi.org/10.48550/arxiv.2308.08594) |  |
 |  | best projected | -1.18525(4) | CP-AFQMC [Shi & Zhang (2013)](https://doi.org/10.1103/physrevb.88.125132) |  |
 | square 6x6, U = 4, n &asymp; 1.3333 | best projected | 0.14809(4) | CP-AFQMC [Shi & Zhang (2013)](https://doi.org/10.1103/physrevb.88.125132) |  |
 | square, 50 sites, U = 8, n = 0.84 | best variational | **-0.82328(3)** | VAFQMC [Wu et al. (2024)](https://doi.org/10.1126/science.adg9774) |  |
 | square 8x8, open, U = 8, n = 0.875 | best variational | **-0.69952** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) |  |
-|  | best extrapolated | -0.704(1) | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-| square 8x8, open, U = 8, n &asymp; 0.9688 | best variational | **-0.5322603** &#9675; | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
-|  | best extrapolated | -0.5335(3) | DMRG [10.1103/r4q9-4yvj](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+|  | best extrapolated | -0.704(1) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+| square 8x8, open, U = 8, n &asymp; 0.9688 | best variational | **-0.5322603** &#9675; | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
+|  | best extrapolated | -0.5335(3) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
 | square 8x8, U = 4, n = 0.4375 | best projected | -1.07180(2) | CP-AFQMC [Shi & Zhang (2013)](https://doi.org/10.1103/physrevb.88.125132) |  |
 | square 8x8, U = 4, n = 0.6875 | best variational | **-1.1846** &#9675; | VMC (tensor BF) [Liang (2025)](https://doi.org/10.48550/arXiv.2507.01856) |  |
 |  | best projected | -1.1858(2) | CP-AFQMC [Shi & Zhang (2013)](https://doi.org/10.1103/physrevb.88.125132) |  |
