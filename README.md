@@ -41,7 +41,7 @@ Scientists and AI systems should use the shared results to build on each other's
 
 ### All 750 open problems (click to unravel)
 
-The verifier can measure 503 of them today.
+The verifier can measure 598 of them today.
 
 <details>
 <summary><b>Heisenberg</b>: 32 instances, energies as <code>E/N (S.S)</code></summary>
@@ -1529,9 +1529,11 @@ listed, with a flag that names the reason. An energy below an exact one is a bug
 below an extrapolated or projected one is allowed, but it gets a second measurement with a
 different sampler before it is called a result, and the papers citing the instance are checked
 for newer energies before a record is announced. Not every instance takes entries yet: today the
-verifier builds the Hubbard, Heisenberg and J1-J2 models on square and
-rectangular lattices, and the electron gas in its simulation cells (2D and 3D, since verifier v1.8).
-The other instances take entries once it covers them.
+verifier (v1.9) builds the Hubbard model on square and rectangular lattices; the Heisenberg and J1-J2
+models on square, rectangular, triangular and honeycomb lattices, and Heisenberg on kagome, pyrochlore and
+shuriken clusters; the Shastry-Sutherland, transverse-field Ising and t-J models; the electron gas in its
+simulation cells; hydrogen chains in Gaussian bases up to 128 orbitals; and VarBench's impurity models
+without spin-orbit coupling. The other instances take entries once it covers them.
 
 ## Scoring
 

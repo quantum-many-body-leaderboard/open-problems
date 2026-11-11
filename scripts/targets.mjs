@@ -24,17 +24,81 @@ export const isSolved = inst => inst.rows.some(r => r.bound_type === "exact");
 // What the verifier (quantum-many-body-leaderboard/verifier) can build today (qrec_verify/hamiltonians.py `build`;
 // the electron gas since v1.8: qrec_verify/continuum.py, the cells of QMBL's checks/heg-hf/hf.mjs).
 const HEG_CELLS = /^(sc|bcc|fcc|square|triangular|rect-\d+(\.\d+)?(x\d+(\.\d+)?){1,2})$/;
+// verifier v1.9 (quantum-many-body-leaderboard/verifier 4c20631): which instances it can build. Mirrors
+// qrec_verify/instance.py (spin clusters), tj.py (t-J clusters), chem.py (the 128-orbital bound) and impurity.py.
+const isSquareN = n => Number.isInteger(Math.sqrt(n));
+const AO_PER_H = { "sto-3g": 1, "sto-6g": 1, "6-31g": 2, "cc-pvdz": 5, "cc-pvtz": 14, "cc-pvqz": 30, "cc-pv5z": 55,
+                   "aug-cc-pvdz": 9, "aug-cc-pvtz": 23, "aug-cc-pvqz": 46 };
+const MAX_ORBITALS = 128;            // qrec_verify/chem.py MAX_ORBITALS
+
+function spinCluster(inst) {
+  // the Heisenberg-type clusters of qrec_verify/instance.py (triangular_dims, frustrated_dims) and lattice_dims
+  const n = inst.n_sites, b = inst.boundary ?? "P", lat = inst.lattice;
+  if (lat === "square" || /^rectangular-\d+x\d+$/.test(lat)) return lat === "square" ? isSquareN(n) : true;
+  if (lat === "triangular") {
+    if (isSquareN(n) && (b === "P" || b === "O")) return true;
+    return b === "P" && Number.isInteger(Math.sqrt(n / 3));
+  }
+  if (b !== "P") return false;
+  let m;
+  if ((m = lat.match(/^kagome-(\d+)x(\d+)$/))) return 3 * m[1] * m[2] === n;
+  if ((m = lat.match(/^honeycomb-(\d+)x(\d+)$/))) return 2 * m[1] * m[2] === n;
+  if ((m = lat.match(/^pyrochlore-(\d+)x(\d+)x(\d+)$/))) { const c = m[1] * m[2] * m[3]; return n === 4 * c || n === 16 * c; }
+  if (lat === "shuriken") return Number.isInteger(Math.sqrt(n / 6));
+  return false;
+}
+
 export function verifierSupport(inst) {
+  const no = reason => ({ supported: false, reason });
   if (inst.model === "HEG2D" || inst.model === "HEG3D")
-    return HEG_CELLS.test(inst.lattice) ? { supported: true } : { supported: false, reason: `${inst.lattice} cell` };
+    return HEG_CELLS.test(inst.lattice) ? { supported: true } : no(`${inst.lattice} cell`);
   const flat = inst.lattice === "square" || /^rectangular-\d+x\d+$/.test(inst.lattice);
-  if (inst.model === "Hubbard") return flat ? { supported: true } : { supported: false, reason: `${inst.lattice} lattice` };
+  const b = inst.boundary ?? "P";
+  if (inst.model === "Hubbard") return flat ? { supported: true } : no(`${inst.lattice} lattice`);
   if (inst.model === "J1J2" || inst.model === "Heisenberg") {
-    if (!flat) return { supported: false, reason: `${inst.lattice} lattice` };
-    if (/A/.test(inst.boundary ?? "")) return { supported: false, reason: "antiperiodic spin boundary" };
+    if (/A/.test(b)) return no("antiperiodic spin boundary");
+    if (!spinCluster(inst)) return no(`${inst.lattice} lattice`);
+    // J2 bonds exist on the square, rectangular, triangular and honeycomb lattices
+    if (inst.model === "J1J2" && !(flat || inst.lattice === "triangular" || /^honeycomb-/.test(inst.lattice)))
+      return no(`J1-J2 on the ${inst.lattice} lattice`);
     return { supported: true };
   }
-  return { supported: false, reason: `${inst.model} model` };
+  if (inst.model === "ShastrySutherland") {
+    const L = Math.sqrt(inst.n_sites);
+    return inst.lattice === "square" && Number.isInteger(L) && L % 2 === 0 && L >= 4 && (b === "P" || b === "O")
+      ? { supported: true } : no(`${inst.lattice} cluster`);
+  }
+  if (inst.model === "TFIsing") {
+    if (/A/.test(b)) return no("antiperiodic boundary");
+    return flat || inst.lattice === "chain" ? { supported: true } : no(`${inst.lattice} lattice`);
+  }
+  if (inst.model === "tJ") {
+    if (!inst.params?.nn_term) return no("t-J without the n n / 4 term");
+    const n = inst.n_sites, lat = inst.lattice;
+    if (lat === "square") {
+      if (isSquareN(n)) return b === "P" || b === "O" ? { supported: true } : no(`boundary ${b}`);
+      let shapes = 0;
+      for (let a = 1; a * a <= n; a++) { const c = Math.sqrt(n - a * a); if (Number.isInteger(c) && c <= a) shapes++; }
+      return b === "P" && shapes === 1 ? { supported: true } : no("square cluster shape");
+    }
+    if (/^rectangular-\d+x\d+$/.test(lat)) return { supported: true };
+    if (/^ladder-\d+x\d+$/.test(lat)) return b === "P" || b === "A" ? { supported: true } : no(`boundary ${b}`);
+    if (lat === "honeycomb-flake24") return { supported: true };
+    return no(`${lat} cluster`);
+  }
+  if (inst.model === "Hchain" || inst.model === "Hsheet") {
+    const basis = String(inst.params?.basis ?? "none").toLowerCase();
+    if (basis === "none") return no("continuous space (basis none)");
+    if (b !== "O") return no("periodic cell");
+    if (inst.n_sites % 2) return no("odd electron number");
+    const per = AO_PER_H[basis];
+    if (per == null) return no(`basis ${inst.params.basis}`);
+    return per * inst.n_sites <= MAX_ORBITALS ? { supported: true } : no(`${per * inst.n_sites} orbitals (at most ${MAX_ORBITALS})`);
+  }
+  if (inst.model === "Impurity")
+    return /^(SB-IMP|SB-DMFT-MT-HF|SB-DMFT-MT-AHF|SB-DMFT-MI-HF|TB-DMFT)$/.test(inst.lattice)
+      ? { supported: true } : no(`${inst.lattice} impurity model`);
+  return no(`${inst.model} model`);
 }
 
 const lowest = rows => [...rows].sort((a, b) => a.energy - b.energy)[0] ?? null;
