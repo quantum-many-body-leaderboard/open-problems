@@ -41,7 +41,7 @@ Scientists and AI systems should use the shared results to build on each other's
 
 ### All 748 open problems (click to unravel)
 
-The verifier can measure 596 of them today.
+The verifier can measure 696 of them today.
 
 <details>
 <summary><b>Heisenberg</b>: 32 instances, energies as <code>E/N (S.S)</code></summary>
@@ -50,8 +50,11 @@ The verifier can measure 596 of them today.
 |---|---|---|---|---|
 | honeycomb 7x7 (98 sites) | best variational | **-0.5421(4)** | VMC (LCN) [Fu et al. (2022)](https://doi.org/10.48550/arxiv.2206.07370) |  |
 | kagome 6x6 (108 sites) | best variational | **-0.436760(5)** | VMC (KagomeResNet) [Sun et al. (2026)](https://doi.org/10.48550/arxiv.2611.05174) |  |
+|  | best projected | -0.436072(1) | FN-GFMC (U(1) Dirac spin liquid) [Iqbal et al. (2013)](https://doi.org/10.1103/physrevb.87.060405) |  |
 |  | best extrapolated | -0.4383(3) | DMRG [Depenbrock et al. (2012)](https://doi.org/10.48550/arxiv.1205.4858) |  |
 | kagome 8x8 (192 sites) | best variational | **-0.435949(5)** | VMC (KagomeResNet) [Sun et al. (2026)](https://doi.org/10.48550/arxiv.2611.05174) |  |
+|  | best projected | -0.435633(8) | FN-GFMC (U(1) Dirac spin liquid) [Iqbal et al. (2013)](https://doi.org/10.1103/physrevb.87.060405) |  |
+|  | best extrapolated | -0.43674(3) | VMC (Gutzwiller) [Iqbal et al. (2013)](https://doi.org/10.1103/physrevb.87.060405) |  |
 | pyrochlore 2x2x2 (128 sites) | best variational | **-0.49229(7)** | VMC (PP + RBM) [Pohle et al. (2023)](https://doi.org/10.48550/arxiv.2311.11561) | *uses [mVMC](https://github.com/issp-center-dev/mVMC)* |
 |  | best extrapolated | -0.49434(5) | VMC (PP) [Pohle et al. (2023)](https://doi.org/10.48550/arxiv.2311.11561) | *uses [mVMC](https://github.com/issp-center-dev/mVMC)* |
 | pyrochlore 2x2x3 (48 sites) | best variational | **-0.5028(2)** | VMC (PP) [Astrakhantsev et al. (2021)](https://doi.org/10.1103/physrevx.11.041021) | *uses [mVMC](https://github.com/issp-center-dev/mVMC)* |
@@ -231,6 +234,7 @@ The verifier can measure 596 of them today.
 | rectangular 16x32, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7371** &#9675; | VMC (SCALE) [Gu et al. (2026)](https://doi.org/10.1103/2kq2-5g5q) | *uses [LaQX](https://github.com/bytedance/laqx)* |
 |  | best projected | -0.7406 &#9675; | FN-GFMC (SCALE) [Gu et al. (2026)](https://doi.org/10.1103/2kq2-5g5q) |  |
 | rectangular 4x12, U = 8, n = 0.875 | best variational | **-0.76608(1)** | VMC (HFPS) [Chen et al. (2026)](https://doi.org/10.1073/pnas.2535288123) | *uses [Quantax](https://github.com/ChenAo-Phys/quantax)* |
+|  | best extrapolated | -0.77 &#9675; | VMC (NNBF) [Luo & Clark (2019)](https://doi.org/10.1103/physrevlett.122.226401) |  |
 | rectangular 4x16, open, U = 8, n = 0.875 | best variational | **-0.6853698** &#9675; | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
 |  | best extrapolated | -0.68554(4) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
 | rectangular 4x16, U = 8, n = 0.875 | best variational | **-0.76645(1)** | VMC (NN-fPEPS) [Chen et al. (2026)](https://doi.org/10.48550/arxiv.2610.30321) |  |
@@ -287,7 +291,7 @@ The verifier can measure 596 of them today.
 | rectangular 8x16, open, U = 8, n = 0.9375 | best variational | **-0.6019(2)** | simple update (fPEPS) [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) |  |
 |  | best extrapolated | -0.6043(6) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
 | rectangular 8x16, U = 8, n = 0.875 | best variational | **-0.7568** &#9675; | VMC (tensor BF) [Liang (2025)](https://doi.org/10.48550/arXiv.2507.01856) |  |
-|  | best projected | -0.75628(3) | FN-GFMC (SCALE) [Gu et al. (2026)](https://doi.org/10.48550/arxiv.2611.04333) |  |
+|  | best projected | -0.75628(3) | FN-GFMC (SCALE) [Gu et al. (2026)](https://doi.org/10.48550/arxiv.2611.04333) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 | rectangular 8x16, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7419** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 | rectangular 8x18, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7421** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 | rectangular 8x20, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7433** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
@@ -1005,9 +1009,9 @@ The verifier can measure 596 of them today.
 | square cell, N = 114, rs = 50, unpolarized | best variational | **-0.019648(2)** | VMC (SJ) [Tanatar & Ceperley (1989)](https://doi.org/10.1103/physrevb.39.5005) |  |
 | triangular cell, N = 16, rs = 30, polarized | best variational | **-0.031990687(3)** | VMC (Fermi Sets) [Li et al. (2026)](https://doi.org/10.48550/arxiv.2607.25872) |  |
 |  | best projected | -0.03199636(7) | FP-DMC (Fermi Sets) [Li et al. (2026)](https://doi.org/10.48550/arxiv.2607.25872) |  |
-| triangular cell, N = 91, rs = 30, polarized | best variational | **-0.03193763(3)** | VMC (self-attention) [Gaggioli et al. (2026)](https://doi.org/10.48550/arxiv.2607.08616) |  |
+| triangular cell, N = 91, rs = 30, polarized | best variational | **-0.0319429(1)** | VMC (TorFormer) [Dai et al. (2026)](https://doi.org/10.48550/arxiv.2609.10186) |  |
 |  | best projected | -0.0319370(1) | FN-DMC (SJB) [Gaggioli et al. (2026)](https://doi.org/10.48550/arxiv.2607.08616) |  |
-| triangular cell, N = 91, rs = 40, polarized | best variational | **-0.02443814(2)** | VMC (self-attention) [Gaggioli et al. (2026)](https://doi.org/10.48550/arxiv.2607.08616) |  |
+| triangular cell, N = 91, rs = 40, polarized | best variational | **-0.02444202(8)** | VMC (TorFormer) [Dai et al. (2026)](https://doi.org/10.48550/arxiv.2609.10186) |  |
 |  | best projected | -0.0244377(2) | FN-DMC (SJB) [Gaggioli et al. (2026)](https://doi.org/10.48550/arxiv.2607.08616) |  |
 | triangular cell, N = 169, rs = 30, polarized | best variational | **-0.03192077(3)** | VMC (self-attention) [Gaggioli et al. (2026)](https://doi.org/10.48550/arxiv.2607.08616) |  |
 |  | best projected | -0.0319197(1) | FN-DMC (SJB) [Gaggioli et al. (2026)](https://doi.org/10.48550/arxiv.2607.08616) |  |
