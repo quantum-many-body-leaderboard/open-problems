@@ -1552,7 +1552,7 @@ listed, with a flag that names the reason. An energy below an exact one is a bug
 below an extrapolated or projected one is allowed, but it gets a second measurement with a
 different sampler before it is called a result, and the papers citing the instance are checked
 for newer energies before a record is announced. Not every instance takes entries yet: today the
-verifier (v1.10) builds the Hubbard model on square and rectangular lattices; the Heisenberg and J1-J2
+verifier (v1.10.1) builds the Hubbard model on square and rectangular lattices; the Heisenberg and J1-J2
 models on square, rectangular, triangular and honeycomb lattices, and Heisenberg on kagome, pyrochlore and
 shuriken clusters; the Shastry-Sutherland, transverse-field Ising and t-J models; the electron gas in its
 simulation cells; hydrogen chains and sheets in continuous space, and in Gaussian bases up to 128 orbitals

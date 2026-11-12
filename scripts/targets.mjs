@@ -24,7 +24,7 @@ export const isSolved = inst => inst.rows.some(r => r.bound_type === "exact");
 // What the verifier (quantum-many-body-leaderboard/verifier) can build today (qrec_verify/hamiltonians.py `build`;
 // the electron gas since v1.8: qrec_verify/continuum.py, the cells of QMBL's checks/heg-hf/hf.mjs).
 const HEG_CELLS = /^(sc|bcc|fcc|square|triangular|rect-\d+(\.\d+)?(x\d+(\.\d+)?){1,2})$/;
-// verifier v1.10 (quantum-many-body-leaderboard/verifier 42875c6): which QMBL instances it can build. Mirrors
+// verifier v1.10.1 (quantum-many-body-leaderboard/verifier 7f4abb8): which QMBL instances it can build. Mirrors
 // qrec_verify/instance.py (spin clusters), tj.py (t-J clusters), chem.py and chem_large.py (hydrogen), molecule.py and impurity.py.
 const isSquareN = n => Number.isInteger(Math.sqrt(n));
 const AO_PER_H = { "sto-3g": 1, "sto-6g": 1, "6-31g": 2, "cc-pvdz": 5, "cc-pvtz": 14, "cc-pvqz": 30, "cc-pv5z": 55,
