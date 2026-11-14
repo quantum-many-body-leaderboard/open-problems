@@ -1771,60 +1771,60 @@ The verifier can measure 748 of them today.
 | C₂, R = 3.52623, N↑ − N↓ = 0, basis-free | best variational | **-75.80516(3)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
 | C₂, R = 3.52623, N↑ − N↓ = 2, basis-free | best variational | **-75.7960(3)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
 | CH, R = 2.13713, charge +1, N↑ − N↓ = 0, basis-free | best variational | **-38.0863(2)** | VMC (PauliNet) [Entwistle et al. (2023)](https://doi.org/10.1038/s41467-022-35534-5) |  |
-| hydrogen chloride (HCl), R = 2.40864, N↑ − N↓ = 0, basis-free | best variational | **-460.81123** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen chloride (HCl), R = 2.40864, N↑ − N↓ = 0, basis-free, BFD | best variational | **-15.65035** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen chloride (HCl), R = 2.40864, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-15.59698** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen chloride (HCl), R = 2.40864, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-15.64912** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen chloride (HCl), R = 2.40973, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-15.597583(9)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| carbon monoxide (CO), R = 2.14209, N↑ − N↓ = 0, basis-free | best variational | **-113.32477(3)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| carbon monoxide (CO), R = 2.173, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -113.3154 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| carbon monoxide (CO), R = 2.173, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -113.3047 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| carbon monoxide (CO), R = 2.173, N↑ − N↓ = 0, basis-free | best variational | **-113.32466(3)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
+| HCl (hydrogen chloride), R = 2.40864, N↑ − N↓ = 0, basis-free | best variational | **-460.81123** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| HCl (hydrogen chloride), R = 2.40864, N↑ − N↓ = 0, basis-free, BFD | best variational | **-15.65035** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| HCl (hydrogen chloride), R = 2.40864, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-15.59698** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| HCl (hydrogen chloride), R = 2.40864, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-15.64912** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| HCl (hydrogen chloride), R = 2.40973, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-15.597583(9)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| CO (carbon monoxide), R = 2.14209, N↑ − N↓ = 0, basis-free | best variational | **-113.32477(3)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| CO (carbon monoxide), R = 2.173, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -113.3154 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| CO (carbon monoxide), R = 2.173, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -113.3047 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| CO (carbon monoxide), R = 2.173, N↑ − N↓ = 0, basis-free | best variational | **-113.32466(3)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
 |  | best extrapolated | -112.7871 &#9675; | HF [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 |  | best approximate | -113.3255 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 | CoO, R = 3.03679, N↑ − N↓ = 3, basis-free, ccECP | best variational | **-220.3459(2)** | VMC (FermiNet) [Li et al. (2022)](https://doi.org/10.1103/physrevresearch.4.013021) |  |
-| fluorine (F₂), R = 2.66999, N↑ − N↓ = 0, basis-free | best variational | **-199.5274** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
+| F₂ (fluorine), R = 2.66999, N↑ − N↓ = 0, basis-free | best variational | **-199.5274** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
 |  | best extrapolated | -199.5303 &#9675; | VMC (LAVA) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
-| hydrogen fluoride (HF), R = 1.73055, N↑ − N↓ = 0, basis-free | best variational | **-100.4595** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
+| HF (hydrogen fluoride), R = 1.73055, N↑ − N↓ = 0, basis-free | best variational | **-100.4595** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
 |  | best extrapolated | -100.4597 &#9675; | VMC (LAVA) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
-| hydrogen fluoride (HF), R = 1.7325, N↑ − N↓ = 0, basis-free | best variational | **-100.45902** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen fluoride (HF), R = 1.7325, N↑ − N↓ = 0, basis-free, BFD | best variational | **-24.92554** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen fluoride (HF), R = 1.7325, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-24.92198** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen fluoride (HF), R = 1.7325, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-24.89074** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen fluoride (HF), R = 1.7325, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-24.87425** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen fluoride (HF), R = 1.7325, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-24.9235** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| lithium hydride (LiH), R = 2.815, N↑ − N↓ = 0, basis-free | best variational | **-8.069021(4)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 2.882, N↑ − N↓ = 0, basis-free | best variational | **-8.069882(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 2.948, N↑ − N↓ = 0, basis-free | best variational | **-8.070345(3)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.01392, N↑ − N↓ = 0, basis-free | best variational | **-8.07051** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| lithium hydride (LiH), R = 3.01392, N↑ − N↓ = 0, basis-free, BFD | best variational | **-0.78819** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| lithium hydride (LiH), R = 3.01392, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-0.78819** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| lithium hydride (LiH), R = 3.01392, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-0.7912** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| lithium hydride (LiH), R = 3.01392, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-0.78699** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| lithium hydride (LiH), R = 3.01392, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-0.78756** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| lithium hydride (LiH), R = 3.01411, N↑ − N↓ = 0, basis-free | best variational | **-8.0703(1)** | VMC (PauliNet) [Hermann et al. (2020)](https://doi.org/10.1038/s41557-020-0544-y) |  |
-| lithium hydride (LiH), R = 3.015, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -8.0697 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| lithium hydride (LiH), R = 3.015, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -8.0687 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| lithium hydride (LiH), R = 3.015, N↑ − N↓ = 0, basis-free | best variational | **-8.070544(2)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| HF (hydrogen fluoride), R = 1.7325, N↑ − N↓ = 0, basis-free | best variational | **-100.45902** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| HF (hydrogen fluoride), R = 1.7325, N↑ − N↓ = 0, basis-free, BFD | best variational | **-24.92554** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| HF (hydrogen fluoride), R = 1.7325, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-24.92198** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| HF (hydrogen fluoride), R = 1.7325, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-24.89074** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| HF (hydrogen fluoride), R = 1.7325, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-24.87425** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| HF (hydrogen fluoride), R = 1.7325, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-24.9235** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| LiH (lithium hydride), R = 2.815, N↑ − N↓ = 0, basis-free | best variational | **-8.069021(4)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 2.882, N↑ − N↓ = 0, basis-free | best variational | **-8.069882(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 2.948, N↑ − N↓ = 0, basis-free | best variational | **-8.070345(3)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.01392, N↑ − N↓ = 0, basis-free | best variational | **-8.07051** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| LiH (lithium hydride), R = 3.01392, N↑ − N↓ = 0, basis-free, BFD | best variational | **-0.78819** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| LiH (lithium hydride), R = 3.01392, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-0.78819** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| LiH (lithium hydride), R = 3.01392, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-0.7912** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| LiH (lithium hydride), R = 3.01392, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-0.78699** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| LiH (lithium hydride), R = 3.01392, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-0.78756** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| LiH (lithium hydride), R = 3.01411, N↑ − N↓ = 0, basis-free | best variational | **-8.0703(1)** | VMC (PauliNet) [Hermann et al. (2020)](https://doi.org/10.1038/s41557-020-0544-y) |  |
+| LiH (lithium hydride), R = 3.015, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -8.0697 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| LiH (lithium hydride), R = 3.015, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -8.0687 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| LiH (lithium hydride), R = 3.015, N↑ − N↓ = 0, basis-free | best variational | **-8.070544(2)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
 |  | best extrapolated | -7.98737 &#9675; | HF [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 |  | best approximate | -8.070696 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| lithium hydride (LiH), R = 3.082, N↑ − N↓ = 0, basis-free | best variational | **-8.070371(7)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.148, N↑ − N↓ = 0, basis-free | best variational | **-8.069958(3)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.215, N↑ − N↓ = 0, basis-free | best variational | **-8.069331(4)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.281, N↑ − N↓ = 0, basis-free | best variational | **-8.0682(3)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.348, N↑ − N↓ = 0, basis-free | best variational | **-8.0672(3)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.415, N↑ − N↓ = 0, basis-free | best variational | **-8.066352(7)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.481, N↑ − N↓ = 0, basis-free | best variational | **-8.065065(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.548, N↑ − N↓ = 0, basis-free | best variational | **-8.063663(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.615, N↑ − N↓ = 0, basis-free | best variational | **-8.062156(4)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.682, N↑ − N↓ = 0, basis-free | best variational | **-8.060571(4)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.749, N↑ − N↓ = 0, basis-free | best variational | **-8.058894(8)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.816, N↑ − N↓ = 0, basis-free | best variational | **-8.057171(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.883, N↑ − N↓ = 0, basis-free | best variational | **-8.055407(7)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 3.95, N↑ − N↓ = 0, basis-free | best variational | **-8.053575(7)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 4.017, N↑ − N↓ = 0, basis-free | best variational | **-8.051748(8)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 4.084, N↑ − N↓ = 0, basis-free | best variational | **-8.049849(8)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
-| lithium hydride (LiH), R = 4.151, N↑ − N↓ = 0, basis-free | best variational | **-8.047965(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.082, N↑ − N↓ = 0, basis-free | best variational | **-8.070371(7)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.148, N↑ − N↓ = 0, basis-free | best variational | **-8.069958(3)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.215, N↑ − N↓ = 0, basis-free | best variational | **-8.069331(4)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.281, N↑ − N↓ = 0, basis-free | best variational | **-8.0682(3)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.348, N↑ − N↓ = 0, basis-free | best variational | **-8.0672(3)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.415, N↑ − N↓ = 0, basis-free | best variational | **-8.066352(7)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.481, N↑ − N↓ = 0, basis-free | best variational | **-8.065065(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.548, N↑ − N↓ = 0, basis-free | best variational | **-8.063663(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.615, N↑ − N↓ = 0, basis-free | best variational | **-8.062156(4)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.682, N↑ − N↓ = 0, basis-free | best variational | **-8.060571(4)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.749, N↑ − N↓ = 0, basis-free | best variational | **-8.058894(8)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.816, N↑ − N↓ = 0, basis-free | best variational | **-8.057171(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.883, N↑ − N↓ = 0, basis-free | best variational | **-8.055407(7)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 3.95, N↑ − N↓ = 0, basis-free | best variational | **-8.053575(7)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 4.017, N↑ − N↓ = 0, basis-free | best variational | **-8.051748(8)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 4.084, N↑ − N↓ = 0, basis-free | best variational | **-8.049849(8)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
+| LiH (lithium hydride), R = 4.151, N↑ − N↓ = 0, basis-free | best variational | **-8.047965(5)** | VMC (FermiNet) [Cassella et al. (2024)](https://doi.org/10.1038/s41467-024-49290-1) |  |
 | MgH, R = 3.26866, N↑ − N↓ = 1, basis-free | best variational | **-200.60296** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
 | MgH, R = 3.26866, N↑ − N↓ = 1, basis-free, BFD | best variational | **-1.37369** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
 | MgH, R = 3.26866, N↑ − N↓ = 1, basis-free, ccECP | best variational | **-1.37559** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
@@ -1839,52 +1839,52 @@ The verifier can measure 748 of them today.
 | Li₂, R = 5.051, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -14.9921 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 | Li₂, R = 5.051, N↑ − N↓ = 0, basis-free | best variational | **-14.994913(4)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
 |  | best approximate | -14.99507 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| nitrogen (N₂), R = 1.6, N↑ − N↓ = 0, basis-free | best variational | **-109.22046(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 1.7548, N↑ − N↓ = 0, basis-free | best variational | **-109.42544(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 1.9097, N↑ − N↓ = 0, basis-free | best variational | **-109.51676(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 2.0645, N↑ − N↓ = 0, basis-free | best variational | **-109.54171(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 2.068, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -109.5327 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| nitrogen (N₂), R = 2.068, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -109.5224 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| nitrogen (N₂), R = 2.068, N↑ − N↓ = 0, basis-free | best variational | **-109.54195(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 1.6, N↑ − N↓ = 0, basis-free | best variational | **-109.22046(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 1.7548, N↑ − N↓ = 0, basis-free | best variational | **-109.42544(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 1.9097, N↑ − N↓ = 0, basis-free | best variational | **-109.51676(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 2.0645, N↑ − N↓ = 0, basis-free | best variational | **-109.54171(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 2.068, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -109.5327 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| N₂ (nitrogen), R = 2.068, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -109.5224 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| N₂ (nitrogen), R = 2.068, N↑ − N↓ = 0, basis-free | best variational | **-109.54195(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
 |  | best extrapolated | -108.994 &#9675; | HF [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 |  | best approximate | -109.5425 &#9675; | UCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| nitrogen (N₂), R = 2.07927, N↑ − N↓ = 0, basis-free | best variational | **-109.5413** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
+| N₂ (nitrogen), R = 2.07927, N↑ − N↓ = 0, basis-free | best variational | **-109.5413** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
 |  | best extrapolated | -109.5424 &#9675; | VMC (LAVA) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
-| nitrogen (N₂), R = 2.2194, N↑ − N↓ = 0, basis-free | best variational | **-109.52889(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 2.3742, N↑ − N↓ = 0, basis-free | best variational | **-109.49621(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 2.48, N↑ − N↓ = 0, basis-free | best variational | **-109.46837(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 2.529, N↑ − N↓ = 0, basis-free | best variational | **-109.45468(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 2.6839, N↑ − N↓ = 0, basis-free | best variational | **-109.41088(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 2.8387, N↑ − N↓ = 0, basis-free | best variational | **-109.36855(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 2.9935, N↑ − N↓ = 0, basis-free | best variational | **-109.32987(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 3.1484, N↑ − N↓ = 0, basis-free | best variational | **-109.29610(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 3.3032, N↑ − N↓ = 0, basis-free | best variational | **-109.26748(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 3.36, N↑ − N↓ = 0, basis-free | best variational | **-109.25831(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 3.4581, N↑ − N↓ = 0, basis-free | best variational | **-109.24428(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 3.6129, N↑ − N↓ = 0, basis-free | best variational | **-109.22625(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 3.7677, N↑ − N↓ = 0, basis-free | best variational | **-109.21287(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 3.9226, N↑ − N↓ = 0, basis-free | best variational | **-109.20307(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 4.0774, N↑ − N↓ = 0, basis-free | best variational | **-109.19612(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 4.2323, N↑ − N↓ = 0, basis-free | best variational | **-109.19126(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 4.24, N↑ − N↓ = 0, basis-free | best variational | **-109.19091(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 4.3871, N↑ − N↓ = 0, basis-free | best variational | **-109.18787(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 4.5419, N↑ − N↓ = 0, basis-free | best variational | **-109.18552(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 4.6968, N↑ − N↓ = 0, basis-free | best variational | **-109.18367(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 4.8516, N↑ − N↓ = 0, basis-free | best variational | **-109.18246(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 5.0065, N↑ − N↓ = 0, basis-free | best variational | **-109.18157(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 5.12, N↑ − N↓ = 0, basis-free | best variational | **-109.18093(4)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 5.1613, N↑ − N↓ = 0, basis-free | best variational | **-109.18087(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 5.3161, N↑ − N↓ = 0, basis-free | best variational | **-109.18030(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 5.471, N↑ − N↓ = 0, basis-free | best variational | **-109.17991(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 5.6258, N↑ − N↓ = 0, basis-free | best variational | **-109.17958(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 5.7806, N↑ − N↓ = 0, basis-free | best variational | **-109.17932(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 5.9355, N↑ − N↓ = 0, basis-free | best variational | **-109.17910(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 6, N↑ − N↓ = 0, basis-free | best variational | **-109.17897(4)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 6.0903, N↑ − N↓ = 0, basis-free | best variational | **-109.17899(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 6.2452, N↑ − N↓ = 0, basis-free | best variational | **-109.17880(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| nitrogen (N₂), R = 6.4, N↑ − N↓ = 0, basis-free | best variational | **-109.17858(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 2.2194, N↑ − N↓ = 0, basis-free | best variational | **-109.52889(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 2.3742, N↑ − N↓ = 0, basis-free | best variational | **-109.49621(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 2.48, N↑ − N↓ = 0, basis-free | best variational | **-109.46837(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 2.529, N↑ − N↓ = 0, basis-free | best variational | **-109.45468(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 2.6839, N↑ − N↓ = 0, basis-free | best variational | **-109.41088(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 2.8387, N↑ − N↓ = 0, basis-free | best variational | **-109.36855(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 2.9935, N↑ − N↓ = 0, basis-free | best variational | **-109.32987(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 3.1484, N↑ − N↓ = 0, basis-free | best variational | **-109.29610(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 3.3032, N↑ − N↓ = 0, basis-free | best variational | **-109.26748(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 3.36, N↑ − N↓ = 0, basis-free | best variational | **-109.25831(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 3.4581, N↑ − N↓ = 0, basis-free | best variational | **-109.24428(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 3.6129, N↑ − N↓ = 0, basis-free | best variational | **-109.22625(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 3.7677, N↑ − N↓ = 0, basis-free | best variational | **-109.21287(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 3.9226, N↑ − N↓ = 0, basis-free | best variational | **-109.20307(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 4.0774, N↑ − N↓ = 0, basis-free | best variational | **-109.19612(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 4.2323, N↑ − N↓ = 0, basis-free | best variational | **-109.19126(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 4.24, N↑ − N↓ = 0, basis-free | best variational | **-109.19091(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 4.3871, N↑ − N↓ = 0, basis-free | best variational | **-109.18787(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 4.5419, N↑ − N↓ = 0, basis-free | best variational | **-109.18552(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 4.6968, N↑ − N↓ = 0, basis-free | best variational | **-109.18367(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 4.8516, N↑ − N↓ = 0, basis-free | best variational | **-109.18246(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 5.0065, N↑ − N↓ = 0, basis-free | best variational | **-109.18157(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 5.12, N↑ − N↓ = 0, basis-free | best variational | **-109.18093(4)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 5.1613, N↑ − N↓ = 0, basis-free | best variational | **-109.18087(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 5.3161, N↑ − N↓ = 0, basis-free | best variational | **-109.18030(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 5.471, N↑ − N↓ = 0, basis-free | best variational | **-109.17991(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 5.6258, N↑ − N↓ = 0, basis-free | best variational | **-109.17958(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 5.7806, N↑ − N↓ = 0, basis-free | best variational | **-109.17932(5)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 5.9355, N↑ − N↓ = 0, basis-free | best variational | **-109.17910(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 6, N↑ − N↓ = 0, basis-free | best variational | **-109.17897(4)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 6.0903, N↑ − N↓ = 0, basis-free | best variational | **-109.17899(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 6.2452, N↑ − N↓ = 0, basis-free | best variational | **-109.17880(6)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| N₂ (nitrogen), R = 6.4, N↑ − N↓ = 0, basis-free | best variational | **-109.17858(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
 | NiO, R = 3.05947, N↑ − N↓ = 2, basis-free, ccECP | best variational | **-244.5855(4)** | VMC (FermiNet) [Li et al. (2022)](https://doi.org/10.1103/physrevresearch.4.013021) |  |
-| oxygen (O₂), R = 2.28241, N↑ − N↓ = 2, basis-free | best variational | **-150.3245** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
+| O₂ (oxygen), R = 2.28241, N↑ − N↓ = 2, basis-free | best variational | **-150.3245** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
 |  | best extrapolated | -150.3272 &#9675; | VMC (LAVA) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
 | ScO, R = 3.13506, N↑ − N↓ = 1, basis-free, ccECP | best variational | **-121.8765(1)** | VMC (FermiNet) [Li et al. (2022)](https://doi.org/10.1103/physrevresearch.4.013021) |  |
 | ScO, R = 3.13506, N↑ − N↓ = 1, basis-free, ccECP on every atom | best variational | **-62.6876(1)** | VMC (FermiNet) [Li et al. (2022)](https://doi.org/10.1103/physrevresearch.4.013021) |  |
@@ -1896,102 +1896,102 @@ The verifier can measure 748 of them today.
 | BeH₂, CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-2.24151** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
 | BeH₂, CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-2.24743** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
 | HCF, QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-138.41669(4)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| hydrogen cyanide (HCN), BH76 hcn, N↑ − N↓ = 0, basis-free | best variational | **-93.43241(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| hydrogen cyanide (HCN), BH76 hcnts, N↑ − N↓ = 0, basis-free | best variational | **-93.35566(2)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| hydrogen cyanide (HCN), BH76 hnc, N↑ − N↓ = 0, basis-free | best variational | **-93.40824(2)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| lithium cyanide (LiCN), licn0, N↑ − N↓ = 0, basis-free | best variational | **-100.38049(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| lithium cyanide (LiCN), licn1, N↑ − N↓ = 0, basis-free | best variational | **-100.37951(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| lithium cyanide (LiCN), licn2, N↑ − N↓ = 0, basis-free | best variational | **-100.37626(4)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| lithium cyanide (LiCN), licn3, N↑ − N↓ = 0, basis-free | best variational | **-100.36622(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| lithium cyanide (LiCN), licn4, N↑ − N↓ = 0, basis-free | best variational | **-100.35389(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| HCN (hydrogen cyanide), BH76 hcn, N↑ − N↓ = 0, basis-free | best variational | **-93.43241(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| HCN (hydrogen cyanide), BH76 hcnts, N↑ − N↓ = 0, basis-free | best variational | **-93.35566(2)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| HCN (hydrogen cyanide), BH76 hnc, N↑ − N↓ = 0, basis-free | best variational | **-93.40824(2)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| LiCN (lithium cyanide), licn0, N↑ − N↓ = 0, basis-free | best variational | **-100.38049(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| LiCN (lithium cyanide), licn1, N↑ − N↓ = 0, basis-free | best variational | **-100.37951(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| LiCN (lithium cyanide), licn2, N↑ − N↓ = 0, basis-free | best variational | **-100.37626(4)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| LiCN (lithium cyanide), licn3, N↑ − N↓ = 0, basis-free | best variational | **-100.36622(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| LiCN (lithium cyanide), licn4, N↑ − N↓ = 0, basis-free | best variational | **-100.35389(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
 | FH₂, BH76 hfhts, N↑ − N↓ = 1, basis-free | best variational | **-100.89248(2)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| water (H₂O), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-76.43786** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| water (H₂O), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-17.27592** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| water (H₂O), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-17.25388** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| water (H₂O), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-17.23355** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| water (H₂O), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-17.21697** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| water (H₂O), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-17.27501** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| water (H₂O), geometry of arXiv:2203.09472, N↑ − N↓ = 0, basis-free | best variational | **-76.4230(5)** | VMC (PauliNet) [Entwistle et al. (2023)](https://doi.org/10.1038/s41467-022-35534-5) |  |
-| water (H₂O), geometry of arXiv:2010.05316, N↑ − N↓ = 0, 6-311G | best variational | **-76.009** &#9675; | HF [Schätzle et al. (2021)](https://doi.org/10.1063/5.0032836) |  |
-| water (H₂O), geometry of arXiv:2010.05316, N↑ − N↓ = 0, basis-free | best variational | **-76.4281(3)** | VMC (PauliNet) [Schätzle et al. (2021)](https://doi.org/10.1063/5.0032836) |  |
-| water (H₂O), geometry of arXiv:2010.05316, N↑ − N↓ = 0, Roos-aug-DZ-ANO | best variational | **-76.0672** &#9675; | HF [Schätzle et al. (2021)](https://doi.org/10.1063/5.0032836) |  |
-| water (H₂O), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-76.43809(2)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| hydrogen sulfide (H₂S), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-399.39499** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen sulfide (H₂S), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-11.42762** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen sulfide (H₂S), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-11.38902** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen sulfide (H₂S), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-11.42607** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| hydrogen sulfide (H₂S), QUEST set, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-11.389308(8)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| nitroxyl (HNO), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-130.48250(4)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| ozone (O₃), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -225.4119 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| ozone (O₃), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -225.3907 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| ozone (O₃), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-225.43231(8)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
+| H₂O (water), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-76.43786** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂O (water), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-17.27592** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂O (water), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-17.25388** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂O (water), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-17.23355** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂O (water), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-17.21697** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂O (water), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-17.27501** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂O (water), geometry of arXiv:2203.09472, N↑ − N↓ = 0, basis-free | best variational | **-76.4230(5)** | VMC (PauliNet) [Entwistle et al. (2023)](https://doi.org/10.1038/s41467-022-35534-5) |  |
+| H₂O (water), geometry of arXiv:2010.05316, N↑ − N↓ = 0, 6-311G | best variational | **-76.009** &#9675; | HF [Schätzle et al. (2021)](https://doi.org/10.1063/5.0032836) |  |
+| H₂O (water), geometry of arXiv:2010.05316, N↑ − N↓ = 0, basis-free | best variational | **-76.4281(3)** | VMC (PauliNet) [Schätzle et al. (2021)](https://doi.org/10.1063/5.0032836) |  |
+| H₂O (water), geometry of arXiv:2010.05316, N↑ − N↓ = 0, Roos-aug-DZ-ANO | best variational | **-76.0672** &#9675; | HF [Schätzle et al. (2021)](https://doi.org/10.1063/5.0032836) |  |
+| H₂O (water), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-76.43809(2)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| H₂S (hydrogen sulfide), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-399.39499** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂S (hydrogen sulfide), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-11.42762** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂S (hydrogen sulfide), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-11.38902** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂S (hydrogen sulfide), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-11.42607** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| H₂S (hydrogen sulfide), QUEST set, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-11.389308(8)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| HNO (nitroxyl), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-130.48250(4)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| O₃ (ozone), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -225.4119 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| O₃ (ozone), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -225.3907 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| O₃ (ozone), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-225.43231(8)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
 |  | best extrapolated | -224.3526 &#9675; | HF [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 |  | best approximate | -225.4338 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| ozone (O₃), W4-11 set, N↑ − N↓ = 0, basis-free | best extrapolated | -225.4368 &#9675; | VMC (LAVA) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
-| borane (BH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-26.6017** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| borane (BH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-4.56874** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| borane (BH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-4.56237** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| borane (BH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-4.57546** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| borane (BH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-4.56158** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| borane (BH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-4.56505** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| formaldehyde (CH₂O), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-114.50756(3)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| thioformaldehyde (CH₂S), QUEST set, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-49.46048(2)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| O₃ (ozone), W4-11 set, N↑ − N↓ = 0, basis-free | best extrapolated | -225.4368 &#9675; | VMC (LAVA) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
+| BH₃ (borane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-26.6017** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| BH₃ (borane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-4.56874** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| BH₃ (borane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-4.56237** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| BH₃ (borane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-4.57546** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| BH₃ (borane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-4.56158** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| BH₃ (borane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-4.56505** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| CH₂O (formaldehyde), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-114.50756(3)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| CH₂S (thioformaldehyde), QUEST set, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-49.46048(2)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
 | H₂CSi, QUEST set, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-43.11183(1)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| ammonia (NH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-56.56337** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| ammonia (NH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-11.77366** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| ammonia (NH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-11.7411** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| ammonia (NH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-11.76236** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| ammonia (NH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-11.73973** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| ammonia (NH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-11.77127** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| ammonia (NH₃), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -56.5591 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| ammonia (NH₃), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -56.5535 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| ammonia (NH₃), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-56.56389(2)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| NH₃ (ammonia), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-56.56337** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| NH₃ (ammonia), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-11.77366** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| NH₃ (ammonia), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-11.7411** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| NH₃ (ammonia), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-11.76236** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| NH₃ (ammonia), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-11.73973** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| NH₃ (ammonia), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-11.77127** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| NH₃ (ammonia), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -56.5591 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| NH₃ (ammonia), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -56.5535 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| NH₃ (ammonia), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-56.56389(2)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
 |  | best extrapolated | -56.2247 &#9675; | HF [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 |  | best approximate | -56.5644 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| ammonia (NH₃), geometry of arXiv:2203.09472, N↑ − N↓ = 0, basis-free | best variational | **-56.5533(3)** | VMC (PauliNet) [Entwistle et al. (2023)](https://doi.org/10.1038/s41467-022-35534-5) |  |
-| phosphine (PH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-343.138** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| phosphine (PH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-8.363** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| phosphine (PH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-8.34428** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| phosphine (PH₃), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-8.35769** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| NH₃ (ammonia), geometry of arXiv:2203.09472, N↑ − N↓ = 0, basis-free | best variational | **-56.5533(3)** | VMC (PauliNet) [Entwistle et al. (2023)](https://doi.org/10.1038/s41467-022-35534-5) |  |
+| PH₃ (phosphine), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-343.138** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| PH₃ (phosphine), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-8.363** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| PH₃ (phosphine), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-8.34428** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| PH₃ (phosphine), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-8.35769** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
 | H₄, geometry of arXiv:2605.17083, N↑ − N↓ = 0, basis-free | best variational | **-2.12477(1)** | VMC (NNAGP) [Kessler & Kühne (2026)](https://doi.org/10.48550/arxiv.2605.17083) |  |
 | H₄, geometry of arXiv:2605.17083, N↑ − N↓ = 0, basis-free | best variational | **-2.15327(1)** | VMC (NNAGP) [Kessler & Kühne (2026)](https://doi.org/10.48550/arxiv.2605.17083) |  |
 | H₄, geometry of arXiv:2605.17083, N↑ − N↓ = 0, basis-free | best variational | **-2.12932(1)** | VMC (NNAGP) [Kessler & Kühne (2026)](https://doi.org/10.48550/arxiv.2605.17083) |  |
 | HN₂O, BH76 n2ohts, N↑ − N↓ = 1, basis-free | best variational | **-185.14391(5)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| hydrazoic acid (HN₃), W4-11 set, N↑ − N↓ = 0, basis-free | best variational | **-164.7916** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
+| HN₃ (hydrazoic acid), W4-11 set, N↑ − N↓ = 0, basis-free | best variational | **-164.7916** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
 |  | best extrapolated | -164.7961 &#9675; | VMC (LAVA) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
-| carbon tetrachloride (CCl₄), geometry of arXiv:2211.13672, N↑ − N↓ = 0, basis-free | best variational | **-1878.8551(8)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| methane (CH₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -40.511 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| methane (CH₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -40.5067 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| methane (CH₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-40.51471(1)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| CCl₄ (carbon tetrachloride), geometry of arXiv:2211.13672, N↑ − N↓ = 0, basis-free | best variational | **-1878.8551(8)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| CH₄ (methane), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -40.511 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| CH₄ (methane), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -40.5067 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| CH₄ (methane), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-40.51471(1)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
 |  | best extrapolated | -40.2171 &#9675; | HF [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 |  | best approximate | -40.515 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| methane (CH₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, BFD | best variational | **-8.10065** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| methane (CH₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-8.08728** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| methane (CH₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-8.10557** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| methane (CH₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-8.08707** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| methane (CH₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-8.09934** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| silane (SiH₄), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-291.87121** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| silane (SiH₄), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-6.2862** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| silane (SiH₄), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-6.27826** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| silane (SiH₄), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-6.28568** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
-| glyoxal (C₂H₂O₂), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-227.8308(1)** | VMC (FermiNet) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| ethylene (C₂H₄), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.4972(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| ethylene (C₂H₄), geometry of arXiv:2203.09472, N↑ − N↓ = 0, basis-free | best variational | **-78.5650(4)** | VMC (PauliNet) [Entwistle et al. (2023)](https://doi.org/10.1038/s41467-022-35534-5) |  |
-| ethylene (C₂H₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -78.5812 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| ethylene (C₂H₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -78.5733 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| ethylene (C₂H₄), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-78.58799(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| CH₄ (methane), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, BFD | best variational | **-8.10065** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| CH₄ (methane), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-8.08728** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| CH₄ (methane), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, eCEPP | best variational | **-8.10557** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| CH₄ (methane), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, eCEPP without core polarization | best variational | **-8.08707** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| CH₄ (methane), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-8.09934** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| SiH₄ (silane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free | best variational | **-291.87121** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| SiH₄ (silane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, BFD | best variational | **-6.2862** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| SiH₄ (silane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-6.27826** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| SiH₄ (silane), CCCBDB experimental geometry, N↑ − N↓ = 0, basis-free, Stuttgart (STU) | best variational | **-6.28568** &#9675; | VMC (FermiNet) [Wang et al. (2024)](https://doi.org/10.1063/5.0207853) |  |
+| C₂H₂O₂ (glyoxal), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-227.8308(1)** | VMC (FermiNet) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.4972(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2203.09472, N↑ − N↓ = 0, basis-free | best variational | **-78.5650(4)** | VMC (PauliNet) [Entwistle et al. (2023)](https://doi.org/10.1038/s41467-022-35534-5) |  |
+| C₂H₄ (ethylene), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCV5Z | best approximate | -78.5812 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| C₂H₄ (ethylene), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -78.5733 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| C₂H₄ (ethylene), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-78.58799(3)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
 |  | best extrapolated | -78.0705 &#9675; | HF [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 |  | best approximate | -78.5888 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| ethylene (C₂H₄), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5664(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| ethylene (C₂H₄), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.4676(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| ethylene (C₂H₄), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5459(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| ethylene (C₂H₄), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5181(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| ethylene (C₂H₄), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5790(2)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| ethylene (C₂H₄), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5831(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| ethylene (C₂H₄), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.4707(2)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| ethylene (C₂H₄), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.4774(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| ethylene (C₂H₄), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-78.58730(2)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| ethylene (C₂H₄), W4-11 set, N↑ − N↓ = 0, basis-free | best variational | **-78.5872** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5664(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.4676(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5459(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5181(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5790(2)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.5831(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.4707(2)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
+| C₂H₄ (ethylene), geometry of arXiv:2503.19847, N↑ − N↓ = 0, basis-free | best variational | **-78.4774(1)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
+| C₂H₄ (ethylene), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-78.58730(2)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| C₂H₄ (ethylene), W4-11 set, N↑ − N↓ = 0, basis-free | best variational | **-78.5872** &#9675; | VMC (LapNet) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
 |  | best extrapolated | -78.5885 &#9675; | VMC (LAVA) [Jiang et al. (2025)](https://doi.org/10.48550/arxiv.2508.02570) |  |
 | CH₃Cl₂, BH76 clch3clcomp, charge -1, N↑ − N↓ = 0, basis-free | best variational | **-960.3632(5)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
 | CH₃Cl₂, BH76 clch3clts, charge -1, N↑ − N↓ = 0, basis-free | best variational | **-960.3388(5)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
@@ -2028,59 +2028,59 @@ The verifier can measure 748 of them today.
 | CH₂NH₂, geometry of arXiv:2503.19847, charge +1, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-17.71035(6)** | VMC (Psiformer) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
 | CH₂NH₂, geometry of arXiv:2503.19847, charge +1, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-17.67476(6)** | VMC (Psiformer) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
 | CH₂NH₂, geometry of arXiv:2503.19847, charge +1, N↑ − N↓ = 0, basis-free, ccECP | best variational | **-17.7167(2)** | VMC (DeepQMC) [Schätzle et al. (2026)](https://doi.org/10.1038/s43588-026-01065-y) |  |
-| water dimer ((H₂O)₂), S22 no. 2, N↑ − N↓ = 0, basis-free | best variational | **-152.88309(6)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| (H₂O)₂ (water dimer), S22 no. 2, N↑ − N↓ = 0, basis-free | best variational | **-152.88309(6)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
 | C₂H₅, BH76 c2h5, N↑ − N↓ = 1, basis-free | best variational | **-79.15115(2)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
 | C₂H₅, BH76 c2h5ts, N↑ − N↓ = 1, basis-free | best variational | **-79.08432(2)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| methylamine (CH₃NH₂), BH76 rkt18, N↑ − N↓ = 2, basis-free | best variational | **-95.70018(3)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| methylamine (CH₃NH₂), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -95.8437 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| methylamine (CH₃NH₂), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-95.86096(3)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
+| CH₃NH₂ (methylamine), BH76 rkt18, N↑ − N↓ = 2, basis-free | best variational | **-95.70018(3)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| CH₃NH₂ (methylamine), geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -95.8437 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
+| CH₃NH₂ (methylamine), geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-95.86096(3)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
 |  | best extrapolated | -95.2628 &#9675; | HF [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 |  | best approximate | -95.8653 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
-| tetrazine (C₂H₂N₄), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-296.3080(1)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| ethane (C₂H₆), path point 0, N↑ − N↓ = 0, basis-free | best variational | **-79.82448(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 1, N↑ − N↓ = 0, basis-free | best variational | **-79.82254(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 2, N↑ − N↓ = 0, basis-free | best variational | **-79.81594(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 3, N↑ − N↓ = 0, basis-free | best variational | **-79.77018(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 4, N↑ − N↓ = 0, basis-free | best variational | **-79.70948(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 5, N↑ − N↓ = 0, basis-free | best variational | **-79.65531(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 6, N↑ − N↓ = 0, basis-free | best variational | **-79.63373(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 7, N↑ − N↓ = 0, basis-free | best variational | **-79.60163(9)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 8, N↑ − N↓ = 0, basis-free | best variational | **-79.59682(9)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 9, N↑ − N↓ = 0, basis-free | best variational | **-79.63426(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 10, N↑ − N↓ = 0, basis-free | best variational | **-79.64326(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 11, N↑ − N↓ = 0, basis-free | best variational | **-79.64816(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 12, N↑ − N↓ = 0, basis-free | best variational | **-79.64788(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 13, N↑ − N↓ = 0, basis-free | best variational | **-79.64827(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 14, N↑ − N↓ = 0, basis-free | best variational | **-79.64937(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 15, N↑ − N↓ = 0, basis-free | best variational | **-79.65006(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 16, N↑ − N↓ = 0, basis-free | best variational | **-79.6502(1)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 17, N↑ − N↓ = 0, basis-free | best variational | **-79.65056(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 18, N↑ − N↓ = 0, basis-free | best variational | **-79.65056(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| ethane (C₂H₆), path point 19, N↑ − N↓ = 0, basis-free | best variational | **-79.65038(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
-| formic acid dimer (C₂H₄O₄), S22 no. 3, N↑ − N↓ = 0, basis-free | best variational | **-379.5638(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| C₂H₂N₄ (tetrazine), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-296.3080(1)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| C₂H₆ (ethane), path point 0, N↑ − N↓ = 0, basis-free | best variational | **-79.82448(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 1, N↑ − N↓ = 0, basis-free | best variational | **-79.82254(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 2, N↑ − N↓ = 0, basis-free | best variational | **-79.81594(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 3, N↑ − N↓ = 0, basis-free | best variational | **-79.77018(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 4, N↑ − N↓ = 0, basis-free | best variational | **-79.70948(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 5, N↑ − N↓ = 0, basis-free | best variational | **-79.65531(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 6, N↑ − N↓ = 0, basis-free | best variational | **-79.63373(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 7, N↑ − N↓ = 0, basis-free | best variational | **-79.60163(9)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 8, N↑ − N↓ = 0, basis-free | best variational | **-79.59682(9)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 9, N↑ − N↓ = 0, basis-free | best variational | **-79.63426(8)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 10, N↑ − N↓ = 0, basis-free | best variational | **-79.64326(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 11, N↑ − N↓ = 0, basis-free | best variational | **-79.64816(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 12, N↑ − N↓ = 0, basis-free | best variational | **-79.64788(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 13, N↑ − N↓ = 0, basis-free | best variational | **-79.64827(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 14, N↑ − N↓ = 0, basis-free | best variational | **-79.64937(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 15, N↑ − N↓ = 0, basis-free | best variational | **-79.65006(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 16, N↑ − N↓ = 0, basis-free | best variational | **-79.6502(1)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 17, N↑ − N↓ = 0, basis-free | best variational | **-79.65056(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 18, N↑ − N↓ = 0, basis-free | best variational | **-79.65056(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₆ (ethane), path point 19, N↑ − N↓ = 0, basis-free | best variational | **-79.65038(7)** | VMC (NucleoNet) [Gao et al. (2026)](https://doi.org/10.48550/arxiv.2610.12985) |  |
+| C₂H₄O₄ (formic acid dimer), S22 no. 3, N↑ − N↓ = 0, basis-free | best variational | **-379.5638(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
 | C₂H₇N, BH76 rkt19, N↑ − N↓ = 2, basis-free | best variational | **-135.01383(3)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| methane dimer ((CH₄)₂), S22 no. 8, N↑ − N↓ = 0, basis-free | best variational | **-81.02888(8)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| (CH₄)₂ (methane dimer), S22 no. 8, N↑ − N↓ = 0, basis-free | best variational | **-81.02888(8)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
 | C₄H₆, geometry of arXiv:1909.02487, N↑ − N↓ = 0, aug-cc-pCVQZ | best approximate | -155.9216 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 | C₄H₆, geometry of arXiv:1909.02487, N↑ − N↓ = 0, basis-free | best variational | **-155.94836(7)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
 |  | best extrapolated | -154.9372 &#9675; | HF [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 |  | best approximate | -155.9575 &#9675; | RCCSD(T) [Pfau et al. (2020)](https://doi.org/10.1103/physrevresearch.2.033429) |  |
 | C₄H₆, QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-155.98532(6)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
 | C₄H₆, S22 no. 16, N↑ − N↓ = 0, basis-free | best variational | **-155.92198(6)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| cyclopentadienone (C₅H₄O), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-268.0865(1)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
-| formamide dimer (C₂H₆N₂O₂), S22 no. 4, N↑ − N↓ = 0, basis-free | best variational | **-339.8195(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| ethylene dimer ((C₂H₄)₂), S22 no. 9, N↑ − N↓ = 0, basis-free | best variational | **-157.17415(7)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| benzene (C₆H₆), geometry of arXiv:2203.09472, N↑ − N↓ = 0, basis-free | best variational | **-232.067(1)** | VMC (PauliNet) [Entwistle et al. (2023)](https://doi.org/10.1038/s41467-022-35534-5) |  |
-| benzene (C₆H₆), geometry of arXiv:2211.13672, N↑ − N↓ = 0, basis-free | best variational | **-232.2400(1)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
-| benzene (C₆H₆), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-232.2323(1)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| C₅H₄O (cyclopentadienone), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-268.0865(1)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
+| C₂H₆N₂O₂ (formamide dimer), S22 no. 4, N↑ − N↓ = 0, basis-free | best variational | **-339.8195(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| (C₂H₄)₂ (ethylene dimer), S22 no. 9, N↑ − N↓ = 0, basis-free | best variational | **-157.17415(7)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| C₆H₆ (benzene), geometry of arXiv:2203.09472, N↑ − N↓ = 0, basis-free | best variational | **-232.067(1)** | VMC (PauliNet) [Entwistle et al. (2023)](https://doi.org/10.1038/s41467-022-35534-5) |  |
+| C₆H₆ (benzene), geometry of arXiv:2211.13672, N↑ − N↓ = 0, basis-free | best variational | **-232.2400(1)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
+| C₆H₆ (benzene), QUEST set, N↑ − N↓ = 0, basis-free | best variational | **-232.2323(1)** | VMC (Psiformer) [Pfau et al. (2024)](https://doi.org/10.1126/science.adn0137) |  |
 | C₅H₈, BH76 c5h8, N↑ − N↓ = 0, basis-free | best variational | **-195.30143(7)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
 | C₅H₈, BH76 rkt22, N↑ − N↓ = 0, basis-free | best variational | **-195.23616(7)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| benzene–water complex (C₆H₈O), S22 no. 17, N↑ − N↓ = 0, basis-free | best variational | **-308.6756(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| toluene (C₇H₈), geometry of arXiv:2211.13672, N↑ − N↓ = 0, basis-free | best variational | **-271.5538(1)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
-| naphthalene (C₁₀H₈), geometry of arXiv:2211.13672, N↑ − N↓ = 0, basis-free | best variational | **-385.8685(2)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
-| benzene dimer ((C₆H₆)₂), S22 no. 20, N↑ − N↓ = 0, basis-free | best variational | **-464.4681(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| uracil dimer (C₈H₈N₄O₄), S22 no. 13, N↑ − N↓ = 0, basis-free | best variational | **-829.5946(3)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| uracil dimer (C₈H₈N₄O₄), S22 no. 5, N↑ − N↓ = 0, basis-free | best variational | **-829.6199(3)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
-| phenol dimer (C₁₂H₁₂O₂), S22 no. 22, N↑ − N↓ = 0, basis-free | best variational | **-614.9097(2)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| C₆H₈O (benzene–water complex), S22 no. 17, N↑ − N↓ = 0, basis-free | best variational | **-308.6756(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| C₇H₈ (toluene), geometry of arXiv:2211.13672, N↑ − N↓ = 0, basis-free | best variational | **-271.5538(1)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
+| C₁₀H₈ (naphthalene), geometry of arXiv:2211.13672, N↑ − N↓ = 0, basis-free | best variational | **-385.8685(2)** | VMC (Psiformer) [Glehn et al. (2022)](https://doi.org/10.48550/arxiv.2211.13672) |  |
+| (C₆H₆)₂ (benzene dimer), S22 no. 20, N↑ − N↓ = 0, basis-free | best variational | **-464.4681(1)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| C₈H₈N₄O₄ (uracil dimer), S22 no. 13, N↑ − N↓ = 0, basis-free | best variational | **-829.5946(3)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| C₈H₈N₄O₄ (uracil dimer), S22 no. 5, N↑ − N↓ = 0, basis-free | best variational | **-829.6199(3)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
+| C₁₂H₁₂O₂ (phenol dimer), S22 no. 22, N↑ − N↓ = 0, basis-free | best variational | **-614.9097(2)** | VMC (LapNet) [Li et al. (2024)](https://doi.org/10.1038/s42256-024-00794-x) |  |
 
 </details>
 
