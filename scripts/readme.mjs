@@ -3,8 +3,8 @@
 // leaderboard is what qmbl.org's Open Problems pages show: the systems and the entries once there
 // are any, and every open problem, one collapsed table per model. As in QMBL, where a stale
 // leaderboard in the README is the worst failure the repository has available, the blocks are
-// never edited by hand: .github/workflows/readme.yml rewrites them every day, after every push to
-// main that changes results/ or the target code, and when started by hand.
+// never edited by hand: .github/workflows/readme.yml rewrites them after every push to main here
+// or to QMBL's main, and when started by hand.
 //
 // The scoring and the labels are QMBL's own code, so the README, the pages and QMBL's README
 // cannot disagree: scripts/open_problems.mjs (loadOpenProblems, score), which builds the pages,

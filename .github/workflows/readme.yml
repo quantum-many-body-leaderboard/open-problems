@@ -1,24 +1,20 @@
 # Keep the README's generated blocks (badges, leaderboard, citation) current: scripts/readme.mjs
 # rewrites them from QMBL's current data and this repository's results/, with the code that builds
-# qmbl.org's Open Problems pages, and this workflow commits README.md when a block changed. Every
-# day (QMBL's data changes the targets and the energies to beat), after a push to main that changes
-# results/ or the target code, and when started by hand. A push made here with GITHUB_TOKEN starts
-# no other workflow, so it cannot loop.
+# qmbl.org's Open Problems pages, and this workflow commits README.md when a block changed. It runs
+# after every push to main here, after every push to QMBL's main (QMBL's data changes the targets
+# and the energies to beat: QMBL's .github/workflows/open-problems-readme.yml starts this workflow
+# through workflow_dispatch), and when started by hand. There is no schedule: a failed start shows
+# as a red run in QMBL. A push made here with GITHUB_TOKEN starts no other workflow, so it cannot
+# loop.
 #
 # Until launch day QMBL's main branch has no scripts/open_problems.mjs; readme.mjs then leaves
 # README.md as it is and this run succeeds without a commit.
 name: readme
 
 on:
-  schedule:
-    - cron: "17 4 * * *"
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - results/**
-      - scripts/readme.mjs
-      - scripts/targets.mjs
 
 permissions:
   contents: write

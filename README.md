@@ -2172,7 +2172,7 @@ Test a pipeline on a solved instance first: every QMBL instance with an exact en
 | `schema/` | the fields of `metadata.yaml` |
 | `submissions/` | the entries |
 | `results/` | QMBL's re-measurement of each entry, read by qmbl.org and by this README |
-| `scripts/` | the format check CI runs, the live target list, and `readme.mjs`, which writes this README's badges, leaderboard and citation every day |
+| `scripts/` | the format check CI runs, the live target list, and `readme.mjs`, which rewrites this README's badges, leaderboard and citation after every change here or in QMBL |
 | `maintainer/` | how QMBL turns a pull request into a listed entry |
 | `figures/` | the header and footer animations |
 
