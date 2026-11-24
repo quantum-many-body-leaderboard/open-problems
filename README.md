@@ -425,7 +425,7 @@ The verifier can measure 748 of them today.
 |---|---|---|---|---|
 | chain, 4 sites, &omega; = 4, g = 2, 4 electrons | best variational | **-2.573** &#9675; | DMRG [Lee et al. (2021)](https://doi.org/10.1103/physrevb.103.115123) |  |
 |  | best projected | -2.5732(5) | CP-AFQMC (TP-LLF(2)) [Lee et al. (2021)](https://doi.org/10.1103/physrevb.103.115123) |  |
-| chain, 4 sites, &omega; = 0.5, g = 1, 1 spinless fermion | best variational | **-0.7085873** &#9675; | ED [QMBL check, checks/holstein-ed-2026-11/](https://github.com/quantum-many-body-leaderboard/quantum-many-body-leaderboard/tree/main/checks/holstein-ed-2026-11) | [QMBL code](https://github.com/quantum-many-body-leaderboard/quantum-many-body-leaderboard/tree/13377ab8/checks/holstein-ed-2026-11) |
+| chain, 4 sites, &omega; = 0.5, g = 1, 1 spinless fermion | best variational | **-0.6990(3)** | VMC (Gutzwiller) [Ohgoe & Imada (2014)](https://doi.org/10.1103/physrevb.89.195139) |  |
 | chain, 12 sites, open, &omega; = 1, g = 1, 4 electrons | best variational | **-0.8985** &#9675; | DMRG [Chakraborty et al. (2014)](https://doi.org/10.1103/physrevb.89.035146) |  |
 | chain, 12 sites, &omega; = 1, g = 1, 4 electrons | best variational | **-0.8975** &#9675; | ED [Chakraborty et al. (2014)](https://doi.org/10.1103/physrevb.89.035146) |  |
 | chain, 16 sites, open, &omega; = 1, g = 1, 4 electrons | best variational | **-0.6748125** &#9675; | DMRG [Chakraborty et al. (2014)](https://doi.org/10.1103/physrevb.89.035146) |  |
