@@ -899,10 +899,10 @@ The verifier can measure 758 of them today.
 |  | best approximate | 10.6732066 &#9675; | dRPA [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 | sc cell, N = 14, rs = 0.4, unpolarized | best extrapolated | 5.6765448 &#9675; | CCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 |  | best approximate | 5.6547591 &#9675; | dRPA [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
-| sc cell, N = 14, rs = 0.5, unpolarized | best variational | **3.412684(4)** | VMC (FermiNet) [Cassella et al. (2023)](https://doi.org/10.1103/physrevlett.130.036401) | *uses [FermiNet](https://github.com/google-deepmind/ferminet)* |
-|  | best projected | 3.41253(4) | ph-AFQMC (RHF) [Lee et al. (2019)](https://doi.org/10.1063/1.5109572) | *uses [PAUXY](https://github.com/pauxy-qmc/pauxy)* |
+| sc cell, N = 14, rs = 0.5, unpolarized | best variational | **3.412684(4)** | VMC (FermiNet) [Cassella et al. (2023)](https://doi.org/10.1103/physrevlett.130.036401) |  |
+|  | best projected | 3.41253(4) | ph-AFQMC (RHF) [Lee et al. (2019)](https://doi.org/10.1063/1.5109572) |  |
 |  | best extrapolated | 3.41226(2) | FCIQMC [Shepherd et al. (2012)](https://doi.org/10.1063/1.4720076) |  |
-|  | best approximate | 3.3916087 &#9675; | dRPA [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
+|  | best approximate | 3.3916083 &#9675; | dRPA [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 | sc cell, N = 14, rs = 0.6, unpolarized | best extrapolated | 2.2154921 &#9675; | CCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 |  | best approximate | 2.1945636 &#9675; | dRPA [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 | sc cell, N = 14, rs = 0.7, unpolarized | best extrapolated | 1.5130365 &#9675; | CCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
@@ -912,9 +912,9 @@ The verifier can measure 758 of them today.
 | sc cell, N = 14, rs = 0.9, unpolarized | best extrapolated | 0.7746685 &#9675; | CCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 |  | best approximate | 0.7534542 &#9675; | rxmCCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 | sc cell, N = 14, rs = 1, unpolarized | best variational | **0.568851(1)** | VMC (FermiNet) [Liu et al. (2026)](https://doi.org/10.48550/arxiv.2604.15888) |  |
-|  | best projected | 0.56869(6) | ph-AFQMC (RHF) [Lee et al. (2019)](https://doi.org/10.1063/1.5109572) | *uses [QMCPACK](https://qmcpack.org/)* |
+|  | best projected | 0.56869(6) | ph-AFQMC (RHF) [Lee et al. (2019)](https://doi.org/10.1063/1.5109572) |  |
 |  | best extrapolated | 0.56850(3) | FCIQMC [Shepherd et al. (2012)](https://doi.org/10.1063/1.4720076) |  |
-|  | best approximate | 0.5464629 &#9675; | rxmCCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
+|  | best approximate | 0.5464626 &#9675; | rxmCCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 | sc cell, N = 14, rs = 10, unpolarized | best variational | **-0.0552126(6)** | VMC (MP-NQS) [Pescia et al. (2024)](https://doi.org/10.1103/physrevb.110.035108) | *uses [NetKet 3](https://www.netket.org/)* |
 |  | best projected | -0.0552180(5) | FN-DMC (iterative BF) [Wilson et al. (2023)](https://doi.org/10.1103/physrevb.107.235139) |  |
 |  | best extrapolated | -0.05289 &#9675; | DCD [Liao et al. (2021)](https://doi.org/10.1103/physrevresearch.3.033072) |  |
@@ -925,8 +925,8 @@ The verifier can measure 758 of them today.
 |  | best approximate | -0.0104603 &#9675; | rxmCCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 | sc cell, N = 14, rs = 15, unpolarized | best variational | **-0.0408619(1)** | VMC (FermiNet) [Liu et al. (2026)](https://doi.org/10.48550/arxiv.2604.15888) |  |
 |  | best approximate | -0.0580244 &#9675; | rxmCCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
-| sc cell, N = 14, rs = 2, unpolarized | best variational | **-0.0084275(7)** | VMC (FermiNet) [Cassella et al. (2023)](https://doi.org/10.1103/physrevlett.130.036401) | *uses [FermiNet](https://github.com/google-deepmind/ferminet)* |
-|  | best projected | -0.00853(6) | ph-AFQMC (RHF) [Lee et al. (2019)](https://doi.org/10.1063/1.5109572) | *uses [QMCPACK](https://qmcpack.org/)* |
+| sc cell, N = 14, rs = 2, unpolarized | best variational | **-0.0084275(7)** | VMC (FermiNet) [Cassella et al. (2023)](https://doi.org/10.1103/physrevlett.130.036401) |  |
+|  | best projected | -0.00853(6) | ph-AFQMC (RHF) [Lee et al. (2019)](https://doi.org/10.1063/1.5109572) |  |
 |  | best extrapolated | -0.00873(3) | FCIQMC [Shepherd et al. (2012)](https://doi.org/10.1063/1.4720076) |  |
 |  | best approximate | -0.0478896 &#9675; | rxmCCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 | sc cell, N = 14, rs = 20, unpolarized | best variational | **-0.0324553(2)** | VMC (MP-NQS) [Pescia et al. (2024)](https://doi.org/10.1103/physrevb.110.035108) | *uses [NetKet 3](https://www.netket.org/)* |
