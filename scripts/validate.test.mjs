@@ -84,6 +84,13 @@ test("an error bar is asked for, not required", () => {
   const root2 = repo(); entry(root2, DIR, TEMPLATE.replace(/^sigma_method:.*\n/m, ""));
   assert.match(run(root2).errors.join("\n"), /sigma_method must say how it was estimated/);
 });
+test("AI model and harness, where an AI system was involved", () => {
+  const root = repo(); entry(root, DIR, TEMPLATE.replace(/^harness:.*\n/m, ""));
+  assert.match(run(root).errors.join("\n"), /ai_involvement is human\+ai, so harness must say which/);
+  const human = TEMPLATE.replace('ai_involvement: "human+ai"', 'ai_involvement: "human"').replace(/^(ai_model|harness):.*\n/gm, "");
+  const root2 = repo(); entry(root2, DIR, human);
+  assert.deepEqual(run(root2).errors, []);
+});
 test("state formats of the verifier", () => {
   const fw = (name, entryPoint) => TEMPLATE.replace('framework: "flax"', `framework: "${name}"`)
     .replace('entry_point: "model.py:build_model"', `entry_point: ${entryPoint}`);

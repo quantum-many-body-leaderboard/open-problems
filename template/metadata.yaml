@@ -5,6 +5,8 @@ system: "Example ViT"              # the method or AI system; one live entry per
 team: "Example Lab"
 contact: "someone@example.org"
 ai_involvement: "human+ai"         # ai | human+ai | human
+ai_model: "Example Model 2"        # with ai or human+ai: the AI model(s), name and version as their maker gives
+harness: "Example Agent CLI"       # with ai or human+ai: the agent harness (e.g. Claude Code, Codex CLI) or your own scripts
 instance: "J1J2/square_100_P_0.5"  # an instance_id from targets/v1.json
 energy_per_site: -0.4975           # your measurement, per site as qmbl.org prints it
 sigma_per_site: 0.000004           # optional: your error bar if you have one; null for a deterministic state

@@ -11,6 +11,8 @@
     "team": {"type": "string", "minLength": 2, "description": "Who made the entry: names or group."},
     "contact": {"type": "string", "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$", "description": "An email address for questions about the entry."},
     "ai_involvement": {"type": "string", "enum": ["ai", "human+ai", "human"], "description": "ai: an AI system did the work end to end. human+ai: people and AI systems both did substantial parts. human: no AI system beyond ordinary tools."},
+    "ai_model": {"type": ["string", "null"], "minLength": 2, "description": "The AI model or models that did the work, by the name and version their maker gives. Required when ai_involvement is ai or human+ai; null or left out for human."},
+    "harness": {"type": ["string", "null"], "minLength": 2, "description": "What ran the AI model: an agent harness such as Claude Code or Codex CLI, or the team's own scripts. Required when ai_involvement is ai or human+ai; null or left out for human."},
     "instance": {"type": "string", "pattern": "^[A-Za-z0-9]+/[A-Za-z0-9_.+-]+$", "description": "A QMBL instance id from targets/v1.json, e.g. J1J2/square_100_P_0.5."},
     "energy_per_site": {"type": "number", "description": "The entrant's own measurement, per site in the convention qmbl.org prints: S.S per site for spin models, total / N for fermions."},
     "sigma_per_site": {"type": ["number", "null"], "minimum": 0, "description": "Its error bar per site, if you have one: asked for, not required, as for every QMBL row (RULES.md section 6). Null or left out for a deterministic state (an MPS contracted exactly)."},

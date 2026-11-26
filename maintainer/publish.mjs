@@ -35,6 +35,8 @@ const result = {
   system: meta.system,
   team: meta.team,
   ai_involvement: meta.ai_involvement,
+  ai_model: meta.ai_model ?? null,
+  harness: meta.harness ?? null,
   energy_per_site: v.energy_per_site,
   sigma_per_site: v.sigma_per_site,
   claimed_energy_per_site: meta.energy_per_site,

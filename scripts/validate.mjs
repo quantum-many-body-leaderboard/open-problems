@@ -161,6 +161,10 @@ export function validate(root, qmbl) {
       errors.push(`${where}/metadata.yaml: a deterministic state has no sigma_per_site and no samples (null or left out)`);
     if (meta.sigma_per_site != null && (meta.sigma_method == null || meta.sigma_method === "deterministic"))
       errors.push(`${where}/metadata.yaml: sigma_per_site is given, so sigma_method must say how it was estimated`);
+    // Which AI model and which harness did the work, where an AI system did (2026-11-26): the arena
+    // on qmbl.org filters by them.
+    if (meta.ai_involvement !== "human") for (const k of ["ai_model", "harness"])
+      if (meta[k] == null) errors.push(`${where}/metadata.yaml: ai_involvement is ${meta.ai_involvement}, so ${k} must say which`);
     // The state formats of the verifier (its README, "The state you submit"; 2026-10-15).
     const s = meta.state, fw = s.framework;
     const form = { flax: /\.py:/, torch: /\.py:/, jax: /\.py:/, python: /\.py:/, julia: /\.jl$/, c: /\.so$/ }[fw];

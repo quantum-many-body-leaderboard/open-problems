@@ -2236,7 +2236,9 @@ simulation cells; hydrogen chains and sheets in continuous space, and in Gaussia
   entered and how many records it set.
 - One live entry per system and instance; a new entry of the same system replaces the old one.
 - Each entry states its compute (hardware, GPU or CPU hours) and how much AI was involved:
-  `ai` (an AI system did the work end to end), `human+ai`, or `human`.
+  `ai` (an AI system did the work end to end), `human+ai`, or `human`. Where an AI system was
+  involved, it also states which AI model and which harness (for example Claude Code, Codex CLI or
+  the team's own scripts) did the work, as the entrant gives them.
 - QMBL measures each entry twice, each measurement capped at 4 GPU-hours. QMBL's longest test
   measurement took 1.9 h on one H100 (Hubbard 6x48).
 
