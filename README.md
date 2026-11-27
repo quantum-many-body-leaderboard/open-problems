@@ -49,19 +49,20 @@ The verifier can measure 764 of them today.
 | instance | value | energy | method | code |
 |---|---|---|---|---|
 | honeycomb 7x7 (98 sites) | best variational | **-0.5421(4)** | VMC (LCN) [Fu et al. (2022)](https://doi.org/10.48550/arxiv.2206.07370) |  |
-| kagome 10x10 (300 sites) | best variational | **-0.435472(5)** | VMC (KagomeResNet) [Sun et al. (2026)](https://doi.org/10.48550/arxiv.2611.05174) |  |
-| kagome 12x12 (432 sites) | best variational | **-0.432519(1)** | VMC (Gutzwiller) [Iqbal et al. (2014)](https://doi.org/10.1103/physrevb.89.020407) |  |
+| kagome 10x10 (300 sites) | best variational | **-0.435947(3)** | ViT (transformer) nl=8, h=12, d=72... [Raikos et al. (2026)](https://doi.org/10.48550/arxiv.2611.18840) |  |
+|  | best extrapolated | -0.4384(3) | ViT (transformer) nl=4,6,8 layers, linear... [Raikos et al. (2026)](https://doi.org/10.48550/arxiv.2611.18840) |  |
+| kagome 12x12 (432 sites) | best variational | **-0.435813(2)** | ViT (transformer) nl=8, h=12, d=72... [Raikos et al. (2026)](https://doi.org/10.48550/arxiv.2611.18840) |  |
 |  | best extrapolated | -0.43652(4) | VMC (Gutzwiller) [Iqbal et al. (2014)](https://doi.org/10.1103/physrevb.89.020407) |  |
-| kagome 16x16 (768 sites) | best variational | **-0.4287204(7)** | VMC (Gutzwiller) [Iqbal et al. (2018)](https://doi.org/10.1103/physrevb.97.115127) |  |
+| kagome 16x16 (768 sites) | best variational | **-0.435210(2)** | ViT (transformer) nl=8, h=12, d=72... [Raikos et al. (2026)](https://doi.org/10.48550/arxiv.2611.18840) |  |
 | kagome 18x18 (972 sites) | best variational | **-0.428737(1)** | VMC (Gutzwiller) [Zhang & Li (2020)](https://doi.org/10.1103/physrevb.102.195106) |  |
 | kagome 20x20 (1200 sites) | best variational | **-0.428718(4)** | VMC (Gutzwiller) [Iqbal et al. (2018)](https://doi.org/10.1103/physrevb.97.115127) |  |
 | kagome 24x24 (1728 sites) | best variational | **-0.42873(1)** | VMC (Gutzwiller) [Iqbal et al. (2018)](https://doi.org/10.1103/physrevb.97.115127) |  |
 | kagome 28x28 (2352 sites) | best variational | **-0.42871(1)** | VMC (Gutzwiller) [Iqbal et al. (2018)](https://doi.org/10.1103/physrevb.97.115127) |  |
 | kagome-2r3x2r3-4x4, 576 sites | best variational | **-0.42872(1)** | VMC (Gutzwiller) [Iqbal et al. (2011)](https://doi.org/10.1103/physrevb.83.100404) |  |
-| kagome 6x6 (108 sites) | best variational | **-0.436760(5)** | VMC (KagomeResNet) [Sun et al. (2026)](https://doi.org/10.48550/arxiv.2611.05174) |  |
+| kagome 6x6 (108 sites) | best variational | **-0.436788(4)** | ViT (transformer) nl=8, h=12, d=72... [Raikos et al. (2026)](https://doi.org/10.48550/arxiv.2611.18840) |  |
 |  | best projected | -0.436072(1) | FN-GFMC (U(1) Dirac spin liquid) [Iqbal et al. (2013)](https://doi.org/10.1103/physrevb.87.060405) |  |
-|  | best extrapolated | -0.4383(3) | DMRG [Depenbrock et al. (2012)](https://doi.org/10.48550/arxiv.1205.4858) |  |
-| kagome 8x8 (192 sites) | best variational | **-0.435949(5)** | VMC (KagomeResNet) [Sun et al. (2026)](https://doi.org/10.48550/arxiv.2611.05174) |  |
+|  | best extrapolated | -0.4395(4) | ViT (transformer) nl=4,6,8 layers, linear... [Raikos et al. (2026)](https://doi.org/10.48550/arxiv.2611.18840) |  |
+| kagome 8x8 (192 sites) | best variational | **-0.436252(3)** | ViT (transformer) nl=8, h=12, d=72... [Raikos et al. (2026)](https://doi.org/10.48550/arxiv.2611.18840) |  |
 |  | best projected | -0.435633(8) | FN-GFMC (U(1) Dirac spin liquid) [Iqbal et al. (2013)](https://doi.org/10.1103/physrevb.87.060405) |  |
 |  | best extrapolated | -0.43674(3) | VMC (Gutzwiller) [Iqbal et al. (2013)](https://doi.org/10.1103/physrevb.87.060405) |  |
 | pyrochlore 2x2x2 (128 sites) | best variational | **-0.49229(7)** | VMC (PP + RBM) [Pohle et al. (2023)](https://doi.org/10.48550/arxiv.2311.11561) | *uses [mVMC](https://github.com/issp-center-dev/mVMC)* |
@@ -115,7 +116,7 @@ The verifier can measure 764 of them today.
 | chain, 100 sites, J2 = 0.6 | best variational | **-0.3808041** &#9675; | DMRG [Rende et al. (2024)](https://doi.org/10.1103/physrevresearch.6.043280) |  |
 | honeycomb 7x7 (98 sites), J2 = 0.2 | best variational | **-0.4538(4)** | VMC (LCN) [Fu et al. (2022)](https://doi.org/10.48550/arxiv.2206.07370) |  |
 | square 8x8, open, J2 = 0.2 | best variational | **-0.55922(1)** | VMC (ANTN) [Chen et al. (2023)](https://doi.org/10.52202/075280-0022) |  |
-| square 8x8, open, J2 = 0.5 | best variational | **-0.48275(2)** | VMC (ANTN) [Chen et al. (2023)](https://doi.org/10.52202/075280-0022) |  |
+| square 8x8, open, J2 = 0.5 | best variational | **-0.4833** &#9675; | PEPS D=4 [Peng & Chan (2025)](https://doi.org/10.1103/r7c3-zq4b) |  |
 | square 8x8, open, J2 = 0.8 | best variational | **-0.50065(3)** | VMC (ANTN) [Chen et al. (2023)](https://doi.org/10.52202/075280-0022) |  |
 | square 8x8, J2 = 0.1 | best variational | **-0.633093** &#9675; | VMC (ViT) [Golubev et al. (2026)](https://doi.org/10.48550/arxiv.2606.04558) | *uses [NetKet](https://www.netket.org/)* |
 | square 8x8, J2 = 0.2 | best variational | **-0.594508** &#9675; | VMC (ViT) [Golubev et al. (2026)](https://doi.org/10.48550/arxiv.2606.04558) | *uses [NetKet](https://www.netket.org/)* |
@@ -140,7 +141,7 @@ The verifier can measure 764 of them today.
 | square 10x10, open, J2 = 0.2 | best variational | **-0.56508(2)** | VMC (ANTN) [Chen et al. (2023)](https://doi.org/10.52202/075280-0022) |  |
 | square 10x10, open, J2 = 0.3 | best variational | **-0.53612(1)** | VMC (ANTN) [Chen et al. (2023)](https://doi.org/10.52202/075280-0022) |  |
 | square 10x10, open, J2 = 0.4 | best variational | **-0.50932(2)** | VMC (ANTN) [Chen et al. (2023)](https://doi.org/10.52202/075280-0022) |  |
-| square 10x10, open, J2 = 0.5 | best variational | **-0.48553(2)** | VMC (cRNN) [Attar et al. (2026)](https://doi.org/10.48550/arxiv.2608.18065) | [werro40/RNN-Natural-Gradients](https://github.com/werro40/RNN-Natural-Gradients) |
+| square 10x10, open, J2 = 0.5 | best variational | **-0.4861** &#9675; | PEPS D=4 [Peng & Chan (2025)](https://doi.org/10.1103/r7c3-zq4b) |  |
 | square 10x10, open, J2 = 0.6 | best variational | **-0.4663902** &#9675; | DMRG [Chen et al. (2023)](https://doi.org/10.52202/075280-0022) |  |
 | square 10x10, open, J2 = 0.7 | best variational | **-0.4735927** &#9675; | DMRG [Chen et al. (2023)](https://doi.org/10.52202/075280-0022) |  |
 | square 10x10, open, J2 = 0.8 | best variational | **-0.5156825** &#9675; | DMRG [Chen et al. (2023)](https://doi.org/10.52202/075280-0022) |  |
@@ -243,14 +244,14 @@ The verifier can measure 764 of them today.
 | instance | value | energy | method | code |
 |---|---|---|---|---|
 | square 8x8, J = 0.8, Jd = 1 | best variational | **-0.449829** &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  |
-|  | best extrapolated | -0.44995 &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  |
+|  | best extrapolated | -0.45001(3) | VMC + ViT combined zero-variance extrapolation [Maity et al. (2025)](https://doi.org/10.48550/arxiv.2501.00096) |  |
 | square 10x10, J = 0.8, Jd = 1 | best variational | **-0.449342(4)** | VMC (ConvNeXt) [Nutakki et al. (2025)](https://doi.org/10.1103/ybgv-35jm) | [NeuralQXLab/convnextnnqs](https://github.com/NeuralQXLab/convnextnnqs) |
 |  | best extrapolated | -0.44947 &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  |
 | square 12x12, J = 0.7, Jd = 1 | best variational | **-0.37627** &#9675; | VMC (Gutzwiller) [Chen & Liu (2026)](https://doi.org/10.1103/hvlq-d179) |  |
 | square 12x12, J = 0.8, Jd = 1 | best variational | **-0.449078** &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  |
-|  | best extrapolated | -0.44931 &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  |
+|  | best extrapolated | -0.4493(1) | VMC + ViT combined zero-variance extrapolation [Maity et al. (2025)](https://doi.org/10.48550/arxiv.2501.00096) |  |
 | square 14x14, J = 0.8, Jd = 1 | best variational | **-0.448929** &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  |
-|  | best extrapolated | -0.4492 &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  |
+|  | best extrapolated | -0.4497(1) | Z3000 + 2 Lanczos steps, zero-variance... [Maity et al. (2025)](https://doi.org/10.48550/arxiv.2501.00096) |  |
 | square 16x16, J = 0.7, Jd = 1 | best variational | **-0.37642** &#9675; | VMC (Gutzwiller) [Chen & Liu (2026)](https://doi.org/10.1103/hvlq-d179) |  |
 | square 16x16, J = 0.8, Jd = 1 | best variational | **-0.448881** &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  |
 | square 18x18, J = 0.8, Jd = 1 | best variational | **-0.448859** &#9675; | VMC (Transformer) [Viteritti et al. (2025)](https://doi.org/10.1103/physrevb.111.134411) |  |
@@ -274,7 +275,7 @@ The verifier can measure 764 of them today.
 |  | best projected | -0.7547 &#9675; | FN-GFMC (SCALE) [Gu et al. (2026)](https://doi.org/10.1103/2kq2-5g5q) |  |
 | rectangular 16x32, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.7371** &#9675; | VMC (SCALE) [Gu et al. (2026)](https://doi.org/10.1103/2kq2-5g5q) | *uses [LaQX](https://github.com/bytedance/laqx)* |
 |  | best projected | -0.7406 &#9675; | FN-GFMC (SCALE) [Gu et al. (2026)](https://doi.org/10.1103/2kq2-5g5q) |  |
-| rectangular 4x12, U = 8, n = 0.875 | best variational | **-0.76608(1)** | VMC (HFPS) [Chen et al. (2026)](https://doi.org/10.1073/pnas.2535288123) | *uses [Quantax](https://github.com/ChenAo-Phys/quantax)* |
+| rectangular 4x12, U = 8, n = 0.875 | best variational | **-0.7662** &#9675; | Deep BF with one Lanczos step [Huang et al. (2026)](https://doi.org/10.48550/arxiv.2609.26544) |  |
 |  | best extrapolated | -0.77 &#9675; | VMC (NNBF) [Luo & Clark (2019)](https://doi.org/10.1103/physrevlett.122.226401) |  |
 | rectangular 4x16, open, U = 8, n = 0.875 | best variational | **-0.6853698** &#9675; | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
 |  | best extrapolated | -0.68554(4) | DMRG [Liu et al. (2025)](https://doi.org/10.1103/r4q9-4yvj) | [hczhai/2d-hubbard-dmrg-2024](https://github.com/hczhai/2d-hubbard-dmrg-2024) |
@@ -364,6 +365,7 @@ The verifier can measure 764 of them today.
 |  | best projected | -0.9252(1) | CP-AFQMC [Levy et al. (2023)](https://doi.org/10.48550/arxiv.2308.08594) |  |
 | square 8x8, U = 4, n = 0.875 | best variational | **-1.01391(8)** | VAFQMC [Levy et al. (2023)](https://doi.org/10.48550/arxiv.2308.08594) |  |
 |  | best projected | -1.01923(6) | CP-AFQMC [Levy et al. (2023)](https://doi.org/10.48550/arxiv.2308.08594) |  |
+|  | best extrapolated | -1.013027(3) | vDBF eps=4e-4, zero-variance extrapolation [Shrikhande et al. (2026)](https://doi.org/10.1103/kq3v-whcq) |  |
 | square 8x8, U = 8, n = 0.875 | best variational | **-0.7532** &#9675; | VMC (transformer BF) [Gu et al. (2026)](https://doi.org/10.1038/s41467-026-74028-6) | [bytedance/laqx](https://github.com/bytedance/laqx) |
 |  | best projected | -0.7616(1) | CP-AFQMC [Levy et al. (2023)](https://doi.org/10.48550/arxiv.2308.08594) |  |
 | square 8x8, U = 8, n = 0.875, t12 (t2 = -0.2) | best variational | **-0.75058(1)** | VMC (transformer BF) [Viteritti et al. (2026)](https://doi.org/10.48550/arxiv.2604.21978) |  |
@@ -548,6 +550,7 @@ The verifier can measure 764 of them today.
 | square 11x11, open, h = 2.8 | best variational | **-2.99099** &#9675; | full update (PEPS) [Lubasch et al. (2014)](https://doi.org/10.1103/physrevb.90.064425) |  |
 | square 11x11, open, h = 2.9 | best variational | **-3.08073** &#9675; | full update (PEPS) [Lubasch et al. (2014)](https://doi.org/10.1103/physrevb.90.064425) |  |
 | square 11x11, open, h = 3 | best variational | **-3.1721** &#9675; | full update (PEPS) [Lubasch et al. (2014)](https://doi.org/10.1103/physrevb.90.064425) |  |
+|  | best projected | -3.17212 &#9675; | cp-AFQMC-re-anchoring (rank-4 tensor-train... [Yu et al. (2024)](https://doi.org/10.48550/arxiv.2411.07194) |  |
 | square 11x11, open, h = 3.1 | best variational | **-3.26457** &#9675; | full update (PEPS) [Lubasch et al. (2014)](https://doi.org/10.1103/physrevb.90.064425) |  |
 | square 11x11, open, h = 3.2 | best variational | **-3.35785** &#9675; | full update (PEPS) [Lubasch et al. (2014)](https://doi.org/10.1103/physrevb.90.064425) |  |
 | square 11x11, open, h = 3.5 | best variational | **-3.64116** &#9675; | full update (PEPS) [Lubasch et al. (2014)](https://doi.org/10.1103/physrevb.90.064425) |  |
@@ -945,7 +948,7 @@ The verifier can measure 764 of them today.
 |  | best approximate | -0.0104603 &#9675; | rxmCCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
 | sc cell, N = 14, rs = 15, unpolarized | best variational | **-0.0408619(1)** | VMC (FermiNet) [Liu et al. (2026)](https://doi.org/10.48550/arxiv.2604.15888) |  |
 |  | best approximate | -0.0580244 &#9675; | rxmCCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
-| sc cell, N = 14, rs = 2, unpolarized | best variational | **-0.0084275(7)** | VMC (FermiNet) [Cassella et al. (2023)](https://doi.org/10.1103/physrevlett.130.036401) |  |
+| sc cell, N = 14, rs = 2, unpolarized | best variational | **-0.033665(1)** | FermiNet (ndet=16) [Liu et al. (2026)](https://doi.org/10.48550/arxiv.2604.15888) |  |
 |  | best projected | -0.00853(6) | ph-AFQMC (RHF) [Lee et al. (2019)](https://doi.org/10.1063/1.5109572) |  |
 |  | best extrapolated | -0.00873(3) | FCIQMC [Shepherd et al. (2012)](https://doi.org/10.1063/1.4720076) |  |
 |  | best approximate | -0.0478896 &#9675; | rxmCCD [Shepherd et al. (2014)](https://doi.org/10.1063/1.4867783) |  |
